@@ -1,0 +1,23 @@
+<div id="settings" ng-controller="GenresCtrl">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Genres</h2>
+            <div cg-busy="genresPromise">
+                <table class="table table-striped" id="genres-table">
+                    <thead>
+                        <tr>
+                            <th>Genre Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="genre in genres">
+                            <td>{{ genre.name }}</td>
+                            <td><button class="btn btn-sm btn-danger pull-right" ng-click="deleteGenre(genre.id)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
