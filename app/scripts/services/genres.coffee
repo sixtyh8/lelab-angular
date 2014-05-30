@@ -5,7 +5,7 @@ angular.module('leLabApp').service 'Genres', (Restangular, $q) ->
     list: ->
     	deferred = $q.defer()
 
-    	Restangular.all("genres").getList().then (results) ->
+    	Restangular.all("genres").get().then (results) ->
     		deferred.resolve results
 
     	deferred.promise
@@ -38,7 +38,7 @@ angular.module('leLabApp').service 'Genres', (Restangular, $q) ->
     search: (term) ->
         deferred = $q.defer()
 
-        Restangular.all("genres").get({"search": term}).then (results) ->
+        Restangular.all("genres").get("search", {"keyword": term}).then (results) ->
             deferred.resolve results
 
         deferred.promise

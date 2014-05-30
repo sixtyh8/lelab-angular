@@ -7,8 +7,11 @@
       list: function() {
         var deferred;
         deferred = $q.defer();
-        credits.getList().then(function(results) {
+        credits.getList().then((function(results) {
           return deferred.resolve(results);
+        }), function(response) {
+          console.log(response);
+          return deferred.reject(response);
         });
         return deferred.promise;
       },

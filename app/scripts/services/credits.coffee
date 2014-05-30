@@ -8,8 +8,11 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
     list: ->
     	deferred = $q.defer()
 
-    	credits.getList().then (results) ->
-    		deferred.resolve results
+    	credits.getList().then ((results) ->
+            deferred.resolve results
+        ), (response) ->
+            console.log response
+            deferred.reject response
 
     	deferred.promise
 
