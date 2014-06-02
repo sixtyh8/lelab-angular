@@ -1,7 +1,5 @@
 'use strict'
 
 angular.module('leLabApp').controller 'IndexCtrl', ($scope, Credits) ->
-
-	Credits.list().then (data) ->
-        $scope.credits =
-            list : data
+    # Maybe have a dashboard with information on the amount of stuff in the db?
+    return

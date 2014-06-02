@@ -3,9 +3,34 @@
 angular.module('leLabApp').service 'Engineers', (Restangular, $q) ->
 
     list: ->
-    	deferred = $q.defer()
+        deferred = $q.defer()
 
-    	Restangular.one("engineers").get().then (results) ->
-    		deferred.resolve results
+        Restangular.one("engineers").get().then (results) ->
+            deferred.resolve results
 
-    	deferred.promise
+        deferred.promise
+
+    add: (name) ->
+        deferred = $q.defer()
+
+        Restangular.all("engineers").post(name).then (results) ->
+            deferred.resolve results
+
+        deferred.promise
+
+    update: (id, name) ->
+        deferred = $q.defer()
+
+        engi = Restangular.one("engineers", id)
+        engi.name = name
+        engi.put().then (data) ->
+            deferred.resolve data
+
+        deferred.promise
+
+    delete: (id) ->
+        deferred = $q.defer()
+
+        engi = Restangular.one("engineers", id)
+        engi.remove().then (data) ->
+            deferred.resolve data

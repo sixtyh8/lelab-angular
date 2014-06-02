@@ -7704,15 +7704,21 @@ body {
   margin-top: 28px;
 }
 
+/* Le Lab Tools */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000371}}
+.table-list-name-column {
+  width: 400px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000377}}
   .container {
     max-width: 1100px;
   }
 
   /* Remove the padding we set earlier */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000384}}
   .header,
   .marketing,
   .footer {
@@ -7721,14 +7727,47 @@ body {
   }
 
   /* Space out the masthead */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000389}}
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000393}}
   .jumbotron {
     border-bottom: 0;
   }
+}
+/* Animations */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003100}}
+.fader-animation.ng-enter,
+.fader-animation.ng-leave {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  -moz-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003106}}
+.fader-animation.ng-enter {
+  -ms-opacity: 0;
+  opacity: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003110}}
+.fader-animation.ng-enter.ng-enter-active {
+  -ms-opacity: 1;
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003114}}
+.fader-animation.ng-leave {
+  -ms-opacity: 1;
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003118}}
+.fader-animation.ng-leave.ng-leave-active {
+  -ms-opacity: 0;
+  opacity: 0;
 }

@@ -14,7 +14,7 @@
     		</tr>
     	</thead>
     	<tbody>
-        	<tr ng-class="credit.trClassName" ng-repeat="credit in credits.list">
+        	<tr ng-class="credit.trClassName" ng-repeat="credit in credits.list track by credit.id">
         			<td class="credit-id">
         				<div ng-if="credit.homepage_flag != 1" class="homepage-off-message">
         					<a href="#" class="tooltip" title="Hidden on homepage">

@@ -5,7 +5,7 @@
       list: function() {
         var deferred;
         deferred = $q.defer();
-        Restangular.all("genres").get().then(function(results) {
+        Restangular.all("genres").getList().then(function(results) {
           return deferred.resolve(results);
         });
         return deferred.promise;

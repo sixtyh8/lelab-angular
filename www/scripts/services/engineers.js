@@ -9,6 +9,32 @@
           return deferred.resolve(results);
         });
         return deferred.promise;
+      },
+      add: function(name) {
+        var deferred;
+        deferred = $q.defer();
+        Restangular.all("engineers").post(name).then(function(results) {
+          return deferred.resolve(results);
+        });
+        return deferred.promise;
+      },
+      update: function(id, name) {
+        var deferred, engi;
+        deferred = $q.defer();
+        engi = Restangular.one("engineers", id);
+        engi.name = name;
+        engi.put().then(function(data) {
+          return deferred.resolve(data);
+        });
+        return deferred.promise;
+      },
+      "delete": function(id) {
+        var deferred, engi;
+        deferred = $q.defer();
+        engi = Restangular.one("engineers", id);
+        return engi.remove().then(function(data) {
+          return deferred.resolve(data);
+        });
       }
     };
   });

@@ -4,8 +4,14 @@
     $scope.genresPromise = Genres.list().then(function(data) {
       return $scope.genres = data;
     });
-    return $scope.search = function() {
-      return Genres.search($scope.keyword).then(function(data) {
+    $scope.deleteGenre = function(id) {
+      return Genres["delete"](id).then(function(data) {
+        console.log(data);
+        return $scope.genres.splice(id, 1);
+      });
+    };
+    return $scope.search = function(keyword) {
+      return Genres.search(keyword).then(function(data) {
         return $scope.results = data;
       });
     };

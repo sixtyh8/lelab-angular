@@ -1,7 +1,7 @@
 'use strict'
 
-angular.module('leLabApp').controller 'CreditsCtrl', ($scope, Credits) ->
-
+angular.module('leLabApp').controller 'CreditsCtrl', ($scope, $filter) ->
+    $scope.currentYear = new Date().getFullYear();
 
 
 angular.module('leLabApp').controller 'CreditsCtrl.List', ($scope, $state, Credits) ->
@@ -12,35 +12,33 @@ angular.module('leLabApp').controller 'CreditsCtrl.List', ($scope, $state, Credi
 
     $scope.deleteCredit = (creditID) ->
         Credits.delete(creditID).then (data) ->
-                $state.go('credits')
+            $state.go('credits')
 
 
-angular.module('leLabApp').controller 'CreditsCtrl.Edit', ($scope, $state, $stateParams, Credits, Engineers) ->
+angular.module('leLabApp').controller 'CreditsCtrl.Edit', ($scope, $state, $stateParams, Credits, Engineers, Genres) ->
 
     Credits.get($stateParams.creditId).then (data) ->
         $scope.credit = data
-
-        Engineers.list().then (data) ->
-            $scope.credit.engineers = data
+        $scope.selectedGenre = $scope.credit.genreName[0]
 
     $scope.saveCredit = ->
         Credits.update($scope.credit).then (data) ->
             $state.go('credits')
 
 
-angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credits, Engineers) ->
-
+angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credits, Engineers, Genres) ->
 
     $scope.credit =
         genreName : [
             { name : "" }
         ]
+        year: $scope.currentYear
         engineer_id: "1"
 
-    Engineers.list().then (data) ->
-        $scope.credit.engineers = data
+    $scope.selectedGenre = $scope.credit.genreName[0]
 
     $scope.saveCredit = ->
+        $scope.credit.genreName[0] = $scope.credit.selectedGenre
         Credits.save($scope.credit).then (data) ->
             console.log data
             $state.go('credits')

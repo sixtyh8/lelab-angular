@@ -1,0 +1,28 @@
+<div ng-controller="CategoriesCtrl">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Genres</h2>
+            <div class="well">
+                <input type="text" class="form-control" ng-model="keyword">
+                <button type="button" class="btn btn-default" ng-click="search()">Search</button>
+                <div ng-model="results"></div>
+            </div>
+            <div cg-busy="categoriesPromise">
+                <table class="table table-striped" id="genres-table">
+                    <thead>
+                        <tr>
+                            <th class="table-list-name-column">Genre - Click to edit</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="category in categories track by category.id">
+                            <td>{{ category.name }}</td>
+                            <td><button class="btn btn-sm btn-danger pull-right" ng-click="deleteCategory(category.id)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

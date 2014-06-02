@@ -1,12 +1,6 @@
 (function() {
   'use strict';
-  angular.module('leLabApp').controller('IndexCtrl', function($scope, Credits) {
-    return Credits.list().then(function(data) {
-      return $scope.credits = {
-        list: data
-      };
-    });
-  });
+  angular.module('leLabApp').controller('IndexCtrl', function($scope, Credits) {});
 
 }).call(this);
 

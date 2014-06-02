@@ -3,20 +3,18 @@
         <div class="col-md-12">
             <h2>Genres</h2>
             <div class="well">
-                <input type="text" class="form-control" ng-model="keyword">
-                <button type="button" class="btn btn-default" ng-click="search()">Search</button>
-                <div ng-model="results"></div>
+                <angucomplete placeholder="Search genres" pause="100" selectedobject="selectedGenre" localdata="genres" searchfields="name" titlefield="name" minlength="1"  inputclass="form-control"/>
             </div>
             <div cg-busy="genresPromise">
                 <table class="table table-striped" id="genres-table">
                     <thead>
                         <tr>
-                            <th>Genre Name</th>
+                            <th class="table-list-name-column">Genre - Click to edit</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="genre in genres">
+                        <tr ng-repeat="genre in genres track by genre.id">
                             <td>{{ genre.name }}</td>
                             <td><button class="btn btn-sm btn-danger pull-right" ng-click="deleteGenre(genre.id)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
                         </tr>
