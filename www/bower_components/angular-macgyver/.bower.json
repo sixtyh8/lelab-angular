@@ -50,8 +50,7 @@
     "tag": "v0.2.9",
     "commit": "4b2d08e0b0b880cc1e95b9f95dbbc0b0f446e5c2"
   },
-  "_source": "git://github.com/StartTheShift/MacGyver.git",
+  "_source": "https://github.com/StartTheShift/MacGyver.git",
   "_target": "~0.2.9",
-  "_originalSource": "angular-macgyver",
-  "_direct": true
+  "_originalSource": "angular-macgyver"
 }

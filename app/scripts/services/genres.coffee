@@ -21,10 +21,10 @@ angular.module('leLabApp').service 'Genres', (Restangular, $q) ->
     update: (id, name) ->
         deferred = $q.defer()
 
-        genre = Restangular.one("genres", id)
-        genre.name = name
-        genre.put().then (data) ->
-            deferred.resolve data
+        credit = Restangular.one("genres", id).get().then (result) ->
+            result[0].name = name
+            result.put()
+            deferred.resolve
 
         deferred.promise
 

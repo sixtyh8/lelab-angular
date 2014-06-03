@@ -34,11 +34,8 @@ angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credit
         ]
         year: $scope.currentYear
         engineer_id: "1"
-
-    $scope.selectedGenre = $scope.credit.genreName[0]
+        credit: "Mastering"
 
     $scope.saveCredit = ->
-        $scope.credit.genreName[0] = $scope.credit.selectedGenre
         Credits.save($scope.credit).then (data) ->
-            console.log data
             $state.go('credits')

@@ -16,4 +16,6 @@ angular.module('leLabApp').controller 'GenresCtrl', ($scope, Genres) ->
         Genres.search(keyword).then (data) ->
             $scope.results = data
 
-    # Add edit function
+    $scope.saveGenre = (data, genre_id) ->
+        Genres.update(genre_id, data).then (data) ->
+            console.log data

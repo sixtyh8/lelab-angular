@@ -37,13 +37,11 @@
         }
       ],
       year: $scope.currentYear,
-      engineer_id: "1"
+      engineer_id: "1",
+      credit: "Mastering"
     };
-    $scope.selectedGenre = $scope.credit.genreName[0];
     return $scope.saveCredit = function() {
-      $scope.credit.genreName[0] = $scope.credit.selectedGenre;
       return Credits.save($scope.credit).then(function(data) {
-        console.log(data);
         return $state.go('credits');
       });
     };

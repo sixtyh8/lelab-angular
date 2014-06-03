@@ -10,9 +10,14 @@
         return $scope.genres.splice(id, 1);
       });
     };
-    return $scope.search = function(keyword) {
+    $scope.search = function(keyword) {
       return Genres.search(keyword).then(function(data) {
         return $scope.results = data;
+      });
+    };
+    return $scope.saveGenre = function(data, genre_id) {
+      return Genres.update(genre_id, data).then(function(data) {
+        return console.log(data);
       });
     };
   });

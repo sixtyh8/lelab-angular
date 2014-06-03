@@ -2,9 +2,6 @@
     <div class="row">
         <div class="col-md-12">
             <h2>Genres</h2>
-            <div class="well">
-                <angucomplete placeholder="Search genres" pause="100" selectedobject="selectedGenre" localdata="genres" searchfields="name" titlefield="name" minlength="1"  inputclass="form-control"/>
-            </div>
             <div cg-busy="genresPromise">
                 <table class="table table-striped" id="genres-table">
                     <thead>
@@ -15,7 +12,7 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="genre in genres track by genre.id">
-                            <td>{{ genre.name }}</td>
+                            <td><a href="#" editable-text="genre.name" onbeforesave="saveGenre($data, genre.id)">{{ genre.name }}</a></td>
                             <td><button class="btn btn-sm btn-danger pull-right" ng-click="deleteGenre(genre.id)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
                         </tr>
                     </tbody>

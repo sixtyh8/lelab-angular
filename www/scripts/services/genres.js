@@ -19,12 +19,12 @@
         return deferred.promise;
       },
       update: function(id, name) {
-        var deferred, genre;
+        var credit, deferred;
         deferred = $q.defer();
-        genre = Restangular.one("genres", id);
-        genre.name = name;
-        genre.put().then(function(data) {
-          return deferred.resolve(data);
+        credit = Restangular.one("genres", id).get().then(function(result) {
+          result[0].name = name;
+          result.put();
+          return deferred.resolve;
         });
         return deferred.promise;
       },

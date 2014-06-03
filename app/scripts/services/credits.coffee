@@ -25,7 +25,7 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
 
         deferred.promise
 
-    # Doesn't work
+    # Works
     save: (credit) ->
         deferred = $q.defer()
 
@@ -36,7 +36,7 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
 
         deferred.promise
 
-    # Doesn't work
+    # Works
     update: (obj) ->
         deferred = $q.defer()
         id = obj.id
@@ -44,16 +44,11 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
         credit = Restangular.one('credits', id).get().then (result) ->
             result = obj
             result.put()
-
             deferred.resolve
-
-        # console.log credit
-        # credit.put().then (results) ->
-        #     deferred.resolve results
 
         deferred.promise
 
-    # Doesn't work
+    # Works
     delete: (id) ->
         deferred = $q.defer()
 

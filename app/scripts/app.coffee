@@ -8,7 +8,8 @@ angular.module('leLabApp', [
   'restangular',
   'ui.bootstrap',
   'ui.router',
-  'cgBusy'
+  'cgBusy',
+  'xeditable'
 ])
   .config ($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) ->
 
@@ -18,6 +19,10 @@ angular.module('leLabApp', [
     RestangularProvider.setRestangularFields({ id: "_id" })
 
 
-  .run ($rootScope, $state) ->
+  .run ($rootScope, $state, editableOptions) ->
     # Assign current state to rootScope to make it available for the menu highlight
     $rootScope.$state = $state
+
+    # xEditable Theme
+    # set to bootstrap3 theme. Can be also 'bs2', 'default'
+    editableOptions.theme = 'bs3';
