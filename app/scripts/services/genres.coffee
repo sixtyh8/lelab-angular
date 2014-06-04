@@ -23,8 +23,8 @@ angular.module('leLabApp').service 'Genres', (Restangular, $q) ->
 
         credit = Restangular.one("genres", id).get().then (result) ->
             result[0].name = name
-            result.put()
-            deferred.resolve
+            result.put().then (data) ->
+                deferred.resolve data
 
         deferred.promise
 

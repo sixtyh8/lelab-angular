@@ -6,11 +6,9 @@ angular.module('leLabApp').controller 'GenresCtrl', ($scope, Genres) ->
         $scope.genres = data
         #$scope.results = data
 
-    $scope.deleteGenre = (id) ->
+    $scope.deleteGenre = (id, index) ->
         Genres.delete(id).then (data) ->
-            console.log data
-            # Remove genre from $scope.genres if request was successful
-            $scope.genres.splice(id, 1)
+            $scope.genres.splice(index, 1)
 
     $scope.search = (keyword) ->
         Genres.search(keyword).then (data) ->
@@ -19,3 +17,4 @@ angular.module('leLabApp').controller 'GenresCtrl', ($scope, Genres) ->
     $scope.saveGenre = (data, genre_id) ->
         Genres.update(genre_id, data).then (data) ->
             console.log data
+            return true

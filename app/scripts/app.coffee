@@ -5,11 +5,13 @@ angular.module('leLabApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
+  'ngAnimate',
   'restangular',
   'ui.bootstrap',
   'ui.router',
   'cgBusy',
-  'xeditable'
+  'xeditable',
+  'fx.animations'
 ])
   .config ($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) ->
 

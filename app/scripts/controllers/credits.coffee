@@ -9,10 +9,14 @@ angular.module('leLabApp').controller 'CreditsCtrl.List', ($scope, $state, Credi
     $scope.creditsPromise = Credits.list().then (data) ->
         $scope.credits =
             list : data
+            config :
+                itemsPerPage: 10
+                fillLastPage: true
 
-    $scope.deleteCredit = (creditID) ->
+
+    $scope.deleteCredit = (creditID, index) ->
         Credits.delete(creditID).then (data) ->
-            $state.go('credits')
+            $scope.credits.list.splice(index, 1)
 
 
 angular.module('leLabApp').controller 'CreditsCtrl.Edit', ($scope, $state, $stateParams, Credits, Engineers, Genres) ->

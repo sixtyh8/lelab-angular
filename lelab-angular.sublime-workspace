@@ -519,54 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/views/genres.html",
-			"settings":
-			{
-				"buffer_size": 1041,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/engineers.html",
-			"settings":
-			{
-				"buffer_size": 988,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/categories.html",
-			"settings":
-			{
-				"buffer_size": 1286,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/scripts/controllers/genres.coffee",
-			"settings":
-			{
-				"buffer_size": 659,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/scripts/services/credits.coffee",
-			"settings":
-			{
-				"buffer_size": 1252,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/scripts/services/genres.coffee",
-			"settings":
-			{
-				"buffer_size": 1026,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/JSHint/JSHint.sublime-build",
 	"command_palette":
@@ -616,12 +568,19 @@
 	},
 	"file_history":
 	[
+		"/D/WebDev/lelab-angular/app/views/genres.html",
+		"/D/WebDev/lelab-angular/app/views/index.html",
+		"/D/WebDev/lelab-angular/app/views/engineers.html",
+		"/D/WebDev/lelab-angular/app/views/credits.html",
+		"/D/WebDev/lelab-angular/app/views/categories.html",
+		"/D/WebDev/lelab-angular/app/index.html",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/genres.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/app.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
 		"/D/WebDev/lelab-angular/app/views/directives/creditForm.html",
-		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
 		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
-		"/D/WebDev/lelab-angular/app/index.html",
 		"/D/WebDev/lelab-angular/package.json",
 		"/D/WebDev/lelab-angular/.gitignore",
 		"/D/WebDev/ysc-front-end/app/styles/partials/_header.scss",
@@ -736,14 +695,7 @@
 		"/D/WebDev/ysc-front-end/app/views/login.html",
 		"/D/WebDev/ysc-front-end/app/bower_components/angular-busy/angular-busy.css",
 		"/D/WebDev/ysc-front-end/app/styles/ui/_animations.scss",
-		"/D/WebDev/ysc-front-end/Gruntfile.js",
-		"/D/WebDev/ysc-front-end/app/views/partials/modal_nutrition_facts.html",
-		"/D/WebDev/ysc-front-end/app/scripts/factories/session.coffee",
-		"/D/WebDev/ysc-front-end/.bowerrc",
-		"/C/Users/gcharbonneau/.gitconfig",
-		"/D/WebDev/ysc-front-end/test/spec/services/profile.coffee",
-		"/D/WebDev/ysc-front-end/test/spec/controllers/stats.coffee",
-		"/D/WebDev/ysc-front-end/test/spec/controllers/setup.coffee"
+		"/D/WebDev/ysc-front-end/Gruntfile.js"
 	],
 	"find":
 	{
@@ -921,177 +873,8 @@
 	"groups":
 	[
 		{
-			"selected": 5,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/views/genres.html",
-					"settings":
-					{
-						"buffer_size": 1041,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								689,
-								689
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/engineers.html",
-					"settings":
-					{
-						"buffer_size": 988,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/categories.html",
-					"settings":
-					{
-						"buffer_size": 1286,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								965,
-								965
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/scripts/controllers/genres.coffee",
-					"settings":
-					{
-						"buffer_size": 659,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								659,
-								659
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/scripts/services/credits.coffee",
-					"settings":
-					{
-						"buffer_size": 1252,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								803,
-								1058
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/scripts/services/genres.coffee",
-					"settings":
-					{
-						"buffer_size": 1026,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								598,
-								598
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

@@ -23,8 +23,9 @@
         deferred = $q.defer();
         credit = Restangular.one("genres", id).get().then(function(result) {
           result[0].name = name;
-          result.put();
-          return deferred.resolve;
+          return result.put().then(function(data) {
+            return deferred.resolve(data);
+          });
         });
         return deferred.promise;
       },

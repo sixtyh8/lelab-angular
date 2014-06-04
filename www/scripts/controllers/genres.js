@@ -4,10 +4,9 @@
     $scope.genresPromise = Genres.list().then(function(data) {
       return $scope.genres = data;
     });
-    $scope.deleteGenre = function(id) {
+    $scope.deleteGenre = function(id, index) {
       return Genres["delete"](id).then(function(data) {
-        console.log(data);
-        return $scope.genres.splice(id, 1);
+        return $scope.genres.splice(index, 1);
       });
     };
     $scope.search = function(keyword) {
@@ -17,7 +16,8 @@
     };
     return $scope.saveGenre = function(data, genre_id) {
       return Genres.update(genre_id, data).then(function(data) {
-        return console.log(data);
+        console.log(data);
+        return true;
       });
     };
   });

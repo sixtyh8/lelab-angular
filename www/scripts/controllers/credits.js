@@ -7,12 +7,16 @@
   angular.module('leLabApp').controller('CreditsCtrl.List', function($scope, $state, Credits) {
     $scope.creditsPromise = Credits.list().then(function(data) {
       return $scope.credits = {
-        list: data
+        list: data,
+        config: {
+          itemsPerPage: 10,
+          fillLastPage: true
+        }
       };
     });
-    return $scope.deleteCredit = function(creditID) {
+    return $scope.deleteCredit = function(creditID, index) {
       return Credits["delete"](creditID).then(function(data) {
-        return $state.go('credits');
+        return $scope.credits.list.splice(index, 1);
       });
     };
   });

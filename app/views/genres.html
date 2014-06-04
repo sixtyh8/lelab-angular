@@ -13,7 +13,7 @@
                     <tbody>
                         <tr ng-repeat="genre in genres track by genre.id">
                             <td><a href="#" editable-text="genre.name" onbeforesave="saveGenre($data, genre.id)">{{ genre.name }}</a></td>
-                            <td><button class="btn btn-sm btn-danger pull-right" ng-click="deleteGenre(genre.id)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+                            <td><button class="btn btn-sm btn-danger pull-right" ng-click="deleteGenre(genre.id, $index)"><span class="glyphicon glyphicon-trash"></span> Delete</button></td>
                         </tr>
                     </tbody>
                 </table>

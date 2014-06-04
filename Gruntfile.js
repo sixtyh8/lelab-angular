@@ -6,6 +6,7 @@ module.exports = function (grunt) {
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
 	grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-wiredep');
 
 	// Grunt Config
 	grunt.initConfig({
@@ -185,6 +186,28 @@ module.exports = function (grunt) {
 				ignorePath: '<%= config.app %>/'
 			}
 		},
+
+        wiredep: {
+
+          target: {
+
+            // Point to the files that should be updated when
+            // you run `grunt wiredep`
+            src: [
+              'app/index.html'
+            ],
+
+            // Optional:
+            // ---------
+            cwd: '',
+            dependencies: true,
+            devDependencies: false,
+            exclude: [],
+            fileTypes: {},
+            ignorePath: '',
+            overrides: {}
+          }
+        },
 
 		// Clean Directories
 		clean: {
@@ -452,6 +475,10 @@ module.exports = function (grunt) {
 	    'coffee:dist',
         'concurrent:dev'
 	]);
+
+    grunt.registerTask('install', [
+        'bower-install'
+    ]);
 
 	// Default Task
 	// usage: 'grunt'
