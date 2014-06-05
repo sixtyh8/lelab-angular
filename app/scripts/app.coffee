@@ -12,7 +12,8 @@ angular.module('leLabApp', [
   'cgBusy',
   'xeditable',
   'fx.animations',
-  'confirmClick'
+  'confirmClick',
+  'flow'
 ])
   .config ($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) ->
 
@@ -32,12 +33,3 @@ angular.module('leLabApp', [
 
   .value 'cgBusyDefaults',
     templateUrl: 'views/directives/loading.html'
-
-
-  angular.module('your_app').value('cgBusyDefaults',{
-    message:'Loading Stuff',
-    backdrop: false,
-    templateUrl: 'my_custom_template.html',
-    delay: 300,
-    minDuration: 700
-});

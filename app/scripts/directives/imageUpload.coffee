@@ -12,3 +12,6 @@ angular.module('leLabApp').directive 'imageUpload', ->
             else
                 scope.hasImage = false
         , true
+
+        scope.imageAdded = (file, event) ->
+            console.log file
