@@ -2,13 +2,13 @@
 
 angular.module('leLabApp').controller 'EngineersCtrl', ($scope, Engineers) ->
 
-    $scope.genresPromise = Engineers.list().then (data) ->
+    $scope.engineersPromise = Engineers.list().then (data) ->
         $scope.engineers = data
 
-    $scope.deleteGenre = (id) ->
+    $scope.deleteEngineer = (id, index) ->
         Engineers.delete(id).then (data) ->
-            console.log data
-            # Remove engineer from $scope.genres if request was successful
-            $scope.engineers.splice(id, 1)
+            $scope.engineers.splice(index, 1)
 
-    # Add edit function
+    $scope.saveEngineer = (data, engineer_id) ->
+        Engineers.update(engineer_id, data).then (data) ->
+            return true

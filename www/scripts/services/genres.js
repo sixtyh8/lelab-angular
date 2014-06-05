@@ -19,9 +19,9 @@
         return deferred.promise;
       },
       update: function(id, name) {
-        var credit, deferred;
+        var deferred, genre;
         deferred = $q.defer();
-        credit = Restangular.one("genres", id).get().then(function(result) {
+        genre = Restangular.one("genres", id).get().then(function(result) {
           result[0].name = name;
           return result.put().then(function(data) {
             return deferred.resolve(data);

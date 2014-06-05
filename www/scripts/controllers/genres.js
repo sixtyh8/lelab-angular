@@ -16,7 +16,6 @@
     };
     return $scope.saveGenre = function(data, genre_id) {
       return Genres.update(genre_id, data).then(function(data) {
-        console.log(data);
         return true;
       });
     };

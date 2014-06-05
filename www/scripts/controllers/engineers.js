@@ -1,13 +1,17 @@
 (function() {
   'use strict';
   angular.module('leLabApp').controller('EngineersCtrl', function($scope, Engineers) {
-    $scope.genresPromise = Engineers.list().then(function(data) {
+    $scope.engineersPromise = Engineers.list().then(function(data) {
       return $scope.engineers = data;
     });
-    return $scope.deleteGenre = function(id) {
+    $scope.deleteEngineer = function(id, index) {
       return Engineers["delete"](id).then(function(data) {
-        console.log(data);
-        return $scope.engineers.splice(id, 1);
+        return $scope.engineers.splice(index, 1);
+      });
+    };
+    return $scope.saveEngineer = function(data, engineer_id) {
+      return Engineers.update(engineer_id, data).then(function(data) {
+        return true;
       });
     };
   });

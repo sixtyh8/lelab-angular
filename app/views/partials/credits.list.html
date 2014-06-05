@@ -10,37 +10,33 @@
     			<th class="year-th">Year</th>
     			<th class="engineer-th">Engineer</th>
     			<th class="credit-th">Credit</th>
-    			<th class="extra-th">Extra Credit</th>
-    			<th class="actions-th" style="min-width:80px;"></th>
+    			<th class="actions-th" style="min-width:120px;"></th>
     		</tr>
     	</thead>
     	<tbody>
         	<tr ng-repeat="credit in credits.list track by credit.id">
         			<td class="credit-id">
-        				<div ng-if="credit.homepage_flag != 1" class="homepage-off-message">
-        					<a href="#" class="tooltip" title="Hidden on homepage">
-        					    <i class="icon-eye-open"></i>
-        					</a>
+        				<div ng-show="credit.homepage_flag != 1" class="homepage-off-message">
+        				    <span class="glyphicon glyphicon-eye-close"></span>
         				</div>
         				{{ credit.id }}
         			</td>
         			<td ng-show="credit.bandcamp_url">
         				<a ng-href="credit.bandcamp_url">
-        					<img ng-src="images/credits/{{credit.imgName[0].small_name}}" alt="{{credit.album_name}}" height="80" width="80" />
+        					<img ng-src="images/credits/{{ credit.imgName[0].small_name }}" alt="{{ credit.album_name }}" height="80" width="80" />
         				</a>
         			</td>
                     <td ng-hide="credit.bandcamp_url">
-                        <img ng-src="images/credits/{{credit.imgName[0].small_name}}" alt="{{credit.album_name}}" height="80" width="80" />
+                        <img ng-src="images/credits/{{ credit.imgName[0].small_name }}" alt="{{ credit.album_name }}" height="80" width="80" />
                     </td>
         			<td>{{ credit.album_name }}<br />{{ credit.artist_name }}</td>
         			<td>{{ credit.genreName[0].name }}</td>
         			<td>{{ credit.year }}</td>
         			<td>{{ credit.engi[0].name }}</td>
         			<td>{{ credit.credit }}</td>
-        			<td>{{ credit.extra_credit }}</td>
         			<td>
         				<a href="#" ui-sref="credits.edit({ creditId: credit.id })" role="button" class="edit-credit btn btn-default btn-sm btn-block"><span class="glyphicon glyphicon-edit"></span> Edit</a>
-        				<button class="btn btn-danger btn-sm btn-block" confirm="deleteCredit(credit.id, $index)" confirm-title="Delete this Credit?" confirm-placement="left"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        				<button class="btn btn-danger btn-sm btn-block" confirm-click="deleteCredit(credit.id, $index)" confirm-message="Are you sure?"><span class="glyphicon glyphicon-trash"></span> Delete</button>
         			</td>
         		</tr>
     	</tbody>

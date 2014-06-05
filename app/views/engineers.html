@@ -12,8 +12,8 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="engineer in engineers track by engineer.id">
-                            <td>{{ engineer.name }}</td>
-                            <td><button class="btn btn-sm btn-danger pull-right" ng-click="deleteEngineer(engineer.id)"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+                            <td><a href="#" editable-text="engineer.name" onbeforesave="saveEngineer($data, engineer.id)">{{ engineer.name }}</a></td>
+                            <td><button class="btn btn-sm btn-danger pull-right" confirm-click="deleteEngineer(engineer.id, $index)" confirm-message="Are you sure?"><span class="glyphicon glyphicon-trash"></span> Delete</button>
                         </tr>
                     </tbody>
                 </table>

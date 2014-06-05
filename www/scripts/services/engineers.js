@@ -21,10 +21,11 @@
       update: function(id, name) {
         var deferred, engi;
         deferred = $q.defer();
-        engi = Restangular.one("engineers", id);
-        engi.name = name;
-        engi.put().then(function(data) {
-          return deferred.resolve(data);
+        engi = Restangular.one("engineers", id).get().then(function(result) {
+          result[0].name = name;
+          return result.put().then(function(data) {
+            return deferred.resolve(data);
+          });
         });
         return deferred.promise;
       },

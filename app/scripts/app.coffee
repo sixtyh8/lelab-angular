@@ -11,7 +11,8 @@ angular.module('leLabApp', [
   'ui.router',
   'cgBusy',
   'xeditable',
-  'fx.animations'
+  'fx.animations',
+  'confirmClick'
 ])
   .config ($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) ->
 
@@ -28,3 +29,15 @@ angular.module('leLabApp', [
     # xEditable Theme
     # set to bootstrap3 theme. Can be also 'bs2', 'default'
     editableOptions.theme = 'bs3';
+
+  .value 'cgBusyDefaults',
+    templateUrl: 'views/directives/loading.html'
+
+
+  angular.module('your_app').value('cgBusyDefaults',{
+    message:'Loading Stuff',
+    backdrop: false,
+    templateUrl: 'my_custom_template.html',
+    delay: 300,
+    minDuration: 700
+});
