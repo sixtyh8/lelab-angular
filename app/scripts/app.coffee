@@ -5,13 +5,11 @@ angular.module('leLabApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ngAnimate',
   'restangular',
   'ui.bootstrap',
   'ui.router',
   'cgBusy',
   'xeditable',
-  'fx.animations',
   'confirmClick',
   'flow'
 ])

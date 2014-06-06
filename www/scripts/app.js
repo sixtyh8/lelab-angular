@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('leLabApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRoute', 'ngAnimate', 'restangular', 'ui.bootstrap', 'ui.router', 'cgBusy', 'xeditable', 'fx.animations', 'confirmClick', 'flow']).config(function($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) {
+  angular.module('leLabApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRoute', 'restangular', 'ui.bootstrap', 'ui.router', 'cgBusy', 'xeditable', 'confirmClick', 'flow']).config(function($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) {
     RestangularProvider.setBaseUrl('http://api.lelab.local/');
     return RestangularProvider.setRestangularFields({
       id: "_id"
