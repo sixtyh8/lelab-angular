@@ -56,3 +56,9 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
             deferred.resolve results
 
         deferred.promise
+
+    # Upload Image
+    saveImage: ->
+        deferred = $q.defer()
+
+
