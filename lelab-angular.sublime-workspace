@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"col",
+				"col-sm-4	BootstrapClass"
+			],
+			[
+				"form",
+				"form-control	BootstrapClass"
+			],
+			[
 				"text",
 				"text-center	BootstrapClass"
 			],
@@ -26,10 +34,6 @@
 			[
 				"flo",
 				"flowFile"
-			],
-			[
-				"form",
-				"form-group	BootstrapClass"
 			],
 			[
 				"fo",
@@ -186,10 +190,6 @@
 			[
 				"button",
 				"buttonSelected"
-			],
-			[
-				"col",
-				"col-md-12	BootstrapClass"
 			],
 			[
 				"data",
@@ -520,6 +520,38 @@
 	"buffers":
 	[
 		{
+			"file": "app/scripts/controllers/tags.coffee",
+			"settings":
+			{
+				"buffer_size": 716,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/tags.html",
+			"settings":
+			{
+				"buffer_size": 1745,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/engineers.coffee",
+			"settings":
+			{
+				"buffer_size": 454,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/services/tags.coffee",
+			"settings":
+			{
+				"buffer_size": 861,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/scripts/services/genres.coffee",
 			"settings":
 			{
@@ -528,10 +560,10 @@
 			}
 		},
 		{
-			"file": "app/scripts/services/engineers.coffee",
+			"file": "app/scripts/controllers/genres.coffee",
 			"settings":
 			{
-				"buffer_size": 870,
+				"buffer_size": 532,
 				"line_ending": "Windows"
 			}
 		}
@@ -584,25 +616,33 @@
 	},
 	"file_history":
 	[
-		"/C/Users/gcharbonneau/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
-		"/C/Users/gcharbonneau/AppData/Roaming/Sublime Text 2/Packages/Themr/ThemrFavorites.sublime-settings",
-		"/C/wamp/bin/php/php5.5.12/php.ini",
 		"/D/WebDev/lelab-angular/app/scripts/config/routes.coffee",
-		"/D/WebDev/lelab-angular/app/views/categories.html",
-		"/D/WebDev/lelab-angular/app/views/credits.html",
+		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/engineers.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/genres.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
+		"/D/WebDev/lelab-angular/app/views/genres.html",
+		"/D/WebDev/lelab-angular/app/views/partials/header.auth.html",
+		"/D/WebDev/lelab-angular/app/index.html",
+		"/D/WebDev/lelab-angular/app/views/tags.html",
+		"/D/WebDev/lelab-angular/app/scripts/services/tags.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/app.coffee",
-		"/D/WebDev/lelab-angular/Gruntfile.js",
-		"/D/WebDev/lelab-angular/.git/config",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/categories.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/directives/imageUpload.coffee",
 		"/D/WebDev/lelab-angular/app/views/directives/imageUpload.html",
-		"/D/WebDev/lelab-angular/app/views/genres.html",
+		"/D/WebDev/lelab-angular/app/views/partials/credits.new.html",
+		"/D/WebDev/lelab-angular/app/scripts/services/images.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/services/engineers.coffee",
+		"/C/Users/gcharbonneau/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/gcharbonneau/AppData/Roaming/Sublime Text 2/Packages/Themr/ThemrFavorites.sublime-settings",
+		"/C/wamp/bin/php/php5.5.12/php.ini",
+		"/D/WebDev/lelab-angular/app/views/categories.html",
+		"/D/WebDev/lelab-angular/app/views/credits.html",
+		"/D/WebDev/lelab-angular/Gruntfile.js",
+		"/D/WebDev/lelab-angular/.git/config",
 		"/D/WebDev/lelab-angular/app/views/index.html",
 		"/D/WebDev/lelab-angular/app/views/engineers.html",
-		"/D/WebDev/lelab-angular/app/index.html",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/genres.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
 		"/D/WebDev/lelab-angular/app/views/directives/creditForm.html",
 		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
 		"/D/WebDev/lelab-angular/package.json",
@@ -703,15 +743,7 @@
 		"/D/WebDev/ysc-front-end/app/scripts/factories/auth.coffee",
 		"/D/WebDev/ysc-front-end/app/scripts/directives/questProgressStats.coffee",
 		"/D/WebDev/ysc-front-end/app/styles/views/_test-page.scss",
-		"/D/WebDev/ysc-front-end/app/styles/directives/_loading.scss",
-		"/D/WebDev/ysc-front-end/app/styles/views/_settings.scss",
-		"/D/WebDev/ysc-front-end/app/views/settings.html",
-		"/D/WebDev/ysc-front-end/app/.htaccess",
-		"/D/WebDev/ysc-front-end/app/views/partials/profile_account.html",
-		"/D/WebDev/ysc-front-end/app/scripts/controllers/profile.coffee",
-		"/D/WebDev/ysc-front-end/app/views/directives/angularBusy.html",
-		"/D/WebDev/ysc-front-end/app/views/partials/profile_avatar.html",
-		"/D/WebDev/ysc-front-end/app/views/partials/profile_friends.html"
+		"/D/WebDev/ysc-front-end/app/styles/directives/_loading.scss"
 	],
 	"find":
 	{
@@ -742,6 +774,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"name",
+			"cat",
+			"genre",
+			"Genre",
+			"genre",
+			"Genre",
+			"genre",
+			"$flow",
 			" class=\"text-info\"",
 			"/a>",
 			"a href=\"#\"",
@@ -861,15 +901,7 @@
 			"AvatarUrl",
 			"console.log response\n        Auth.logout()",
 			"console.log \"Error\"\n        console.log response",
-			"no-bullet",
-			"quest",
-			"currentQuest",
-			"quest",
-			"index",
-			"quest",
-			"col-sm-10",
-			"sm-2",
-			"$"
+			"no-bullet"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -894,6 +926,430 @@
 			[
 				{
 					"buffer": 0,
+					"file": "app/scripts/controllers/tags.coffee",
+					"settings":
+					{
+						"buffer_size": 716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								691,
+								691
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/tags.html",
+					"settings":
+					{
+						"buffer_size": 1745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								807
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/controllers/engineers.coffee",
+					"settings":
+					{
+						"buffer_size": 454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								453,
+								453
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/scripts/services/tags.coffee",
+					"settings":
+					{
+						"buffer_size": 861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								697,
+								697
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "app/scripts/services/genres.coffee",
 					"settings":
 					{
@@ -904,7 +1360,7 @@
 						"selection":
 						[
 							[
-								676,
+								417,
 								676
 							]
 						],
@@ -921,19 +1377,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/scripts/services/engineers.coffee",
+					"buffer": 5,
+					"file": "app/scripts/controllers/genres.coffee",
 					"settings":
 					{
-						"buffer_size": 870,
+						"buffer_size": 532,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								436,
+								440
 							]
 						],
 						"settings":
@@ -1015,6 +1471,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 224.0,
+	"side_bar_width": 248.0,
 	"status_bar_visible": true
 }

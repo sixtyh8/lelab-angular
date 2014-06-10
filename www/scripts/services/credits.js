@@ -52,6 +52,10 @@
           return deferred.resolve(results);
         });
         return deferred.promise;
+      },
+      saveImage: function() {
+        var deferred;
+        return deferred = $q.defer();
       }
     };
   });

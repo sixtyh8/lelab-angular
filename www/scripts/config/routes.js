@@ -45,14 +45,14 @@
           templateUrl: "views/genres.html"
         }
       }
-    }).state("categories", {
-      url: "/categories",
+    }).state("tags", {
+      url: "/tags",
       views: {
         header: {
           templateUrl: "views/partials/header.auth.html"
         },
         main: {
-          templateUrl: "views/categories.html"
+          templateUrl: "views/tags.html"
         }
       }
     }).state("engineers", {

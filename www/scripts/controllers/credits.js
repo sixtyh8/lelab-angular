@@ -33,7 +33,7 @@
     };
   });
 
-  angular.module('leLabApp').controller('CreditsCtrl.New', function($scope, $state, Credits, Engineers, Genres) {
+  angular.module('leLabApp').controller('CreditsCtrl.New', function($scope, $state, Credits, Engineers, Genres, Images) {
     $scope.credit = {
       genreName: [
         {

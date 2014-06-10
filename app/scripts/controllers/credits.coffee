@@ -30,7 +30,7 @@ angular.module('leLabApp').controller 'CreditsCtrl.Edit', ($scope, $state, $stat
             $state.go('credits')
 
 
-angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credits, Engineers, Genres) ->
+angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credits, Engineers, Genres, Images) ->
 
     $scope.credit =
         genreName : [
@@ -39,6 +39,9 @@ angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credit
         year: $scope.currentYear
         engineer_id: "1"
         credit: "Mastering"
+
+    # $scope.$on 'flow::fileAdded', (event, $flow, flowFile) ->
+    #     console.log flowFile
 
     $scope.saveCredit = ->
         Credits.save($scope.credit).then (data) ->

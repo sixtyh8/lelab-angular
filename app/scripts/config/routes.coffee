@@ -50,14 +50,14 @@ angular.module('leLabApp').config ($urlRouterProvider, $stateProvider) ->
           main:
             templateUrl: "views/genres.html"
 
-    # Categories
-    ).state("categories"
-        url: "/categories"
+    # Tags
+    ).state("tags"
+        url: "/tags"
         views:
             header:
                 templateUrl: "views/partials/header.auth.html"
             main:
-                templateUrl: "views/categories.html"
+                templateUrl: "views/tags.html"
 
     # Engineers
     ).state("engineers"
