@@ -4,6 +4,7 @@
     $urlRouterProvider.otherwise("/");
     $urlRouterProvider.when("/", "/credits");
     $urlRouterProvider.when("/credits", "/credits/list");
+    $urlRouterProvider.when("/whitepapers", "/whitepapers/list");
     return $stateProvider.state("credits", {
       url: "/credits",
       views: {
@@ -33,6 +34,37 @@
       views: {
         credits: {
           templateUrl: "views/partials/credits.new.html"
+        }
+      }
+    }).state("whitepapers", {
+      url: "/whitepapers",
+      views: {
+        header: {
+          templateUrl: "views/partials/header.auth.html"
+        },
+        main: {
+          templateUrl: "views/whitepapers.html"
+        }
+      }
+    }).state("whitepapers.list", {
+      url: "/list",
+      views: {
+        whitepapers: {
+          templateUrl: "views/partials/whitepapers.list.html"
+        }
+      }
+    }).state("whitepapers.edit", {
+      url: "/edit/:creditId",
+      views: {
+        whitepapers: {
+          templateUrl: "views/partials/whitepapers.edit.html"
+        }
+      }
+    }).state("whitepapers.new", {
+      url: "/new",
+      views: {
+        whitepapers: {
+          templateUrl: "views/partials/whitepapers.new.html"
         }
       }
     }).state("genres", {
