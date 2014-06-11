@@ -2,7 +2,7 @@
 
 angular.module('leLabApp').controller 'WhitepapersCtrl', ($scope, $filter) ->
     newDate = new Date()
-    $scope.now = $filter('date')(newDate, 'short')
+    $scope.now = $filter('date')(newDate, 'shortDate')
 
 
 angular.module('leLabApp').controller 'WhitepapersCtrl.List', ($scope, $state, Whitepapers) ->
@@ -33,9 +33,7 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $
 angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, Whitepapers, Tags) ->
 
     $scope.whitepaper =
-        created_at: ""
-        title: ""
-        body: ""
+        created_at: $scope.now
 
 
     $scope.saveWhitepaper = ->

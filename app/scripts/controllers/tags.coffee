@@ -15,8 +15,8 @@ angular.module('leLabApp').controller 'TagsCtrl', ($scope, Tags) ->
     $scope.addTag = ->
         if $scope.newTag.label?
             Tags.add($scope.newTag.label).then (data) ->
-                console.log data
                 $scope.newTag.label = null
+                # Add the tag to the scope
                 $scope.tags.push(data)
 
     $scope.saveTag = (data, tag_id) ->

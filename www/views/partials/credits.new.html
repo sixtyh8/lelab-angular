@@ -1,12 +1,12 @@
 <div ng-controller="CreditsCtrl.New">
     <div class="row">
-    <div class="col-md-6">
-        <credit-form credit="credit"></credit-form>
+        <div class="col-md-6">
+            <credit-form credit="credit"></credit-form>
+        </div>
+        <div class="col-md-6">
+            <image-upload credit="credit"></image-upload>
+        </div>
     </div>
-    <div class="col-md-6">
-        <image-upload credit="credit"></image-upload>
-    </div>
-</div>
     <div class="row">
         <div class="col-xs-4 col-xs-offset-2">
             <button type="button" class="btn btn-primary" ng-click="saveCredit()">Submit</button>

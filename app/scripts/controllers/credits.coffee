@@ -7,13 +7,30 @@ angular.module('leLabApp').controller 'CreditsCtrl', ($scope, $filter) ->
 angular.module('leLabApp').controller 'CreditsCtrl.List', ($scope, $state, Credits) ->
 
     $scope.creditsPromise = Credits.list().then (data) ->
+
         $scope.credits =
             list : data
-            config :
-                itemsPerPage: 10
-                fillLastPage: true
+
+        $scope.rowCollection = data
+        $scope.columnCollection = [
+            {label: 'ID', map: 'id'}
+            {label: 'Album', map: 'album_name'}
+            {label: 'Artist', map: 'artist_name'}
+            {label: 'Genre', map: 'genreName[0].name'}
+            {label: 'Year', map: 'year'}
+            {label: 'Engineer', map: 'engi[0].name'}
+            {label: 'credit', map: 'credit'}
+        ]
 
 
+    $scope.globalConfig =
+        isPaginationEnabled: true
+        itemsByPage: 12
+        maxSize: 8
+
+
+
+    # Delete a credit
     $scope.deleteCredit = (creditID, index) ->
         Credits.delete(creditID).then (data) ->
             $scope.credits.list.splice(index, 1)

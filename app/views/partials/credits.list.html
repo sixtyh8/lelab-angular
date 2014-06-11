@@ -1,6 +1,11 @@
 <div ng-controller="CreditsCtrl.List" cg-busy="creditsPromise">
 
-    <table class="table table-striped table-bordered" id="credits-table">
+
+    <smart-table config="globalConfig" columns="columnCollection" rows="rowCollection"></smart-table>
+
+
+
+    <table class="table table-striped table-bordered" id="credits-table" ng-show="false">
     	<thead>
     		<tr>
     			<th class="credit-id">ID</th>
@@ -14,26 +19,26 @@
     		</tr>
     	</thead>
     	<tbody>
-        	<tr ng-repeat="credit in credits.list track by credit.id">
+        	<tr bindonce ng-repeat="credit in credits.list track by credit.id">
         			<td class="credit-id">
         				<div ng-show="credit.homepage_flag != 1" class="homepage-off-message">
         				    <span class="glyphicon glyphicon-eye-close"></span>
         				</div>
-        				{{ credit.id }}
+        				<span bo-text="credit.id"></span>
         			</td>
-        			<td ng-show="credit.bandcamp_url">
-        				<a ng-href="credit.bandcamp_url">
-        					<img ng-src="images/credits/{{ credit.imgName[0].small_name }}" alt="{{ credit.album_name }}" height="80" width="80" />
+        			<td ng-if="credit.bandcamp_url">
+        				<a bo-href="credit.bandcamp_url">
+
         				</a>
         			</td>
-                    <td ng-hide="credit.bandcamp_url">
-                        <img ng-src="images/credits/{{ credit.imgName[0].small_name }}" alt="{{ credit.album_name }}" height="80" width="80" />
+                    <td ng-if="!credit.bandcamp_url">
+
                     </td>
-        			<td>{{ credit.album_name }}<br />{{ credit.artist_name }}</td>
-        			<td>{{ credit.genreName[0].name }}</td>
-        			<td>{{ credit.year }}</td>
-        			<td>{{ credit.engi[0].name }}</td>
-        			<td>{{ credit.credit }}</td>
+        			<td><span bo-text="credit.album_name"></span><br /><span bo-text="credit.artist_name"></span></td>
+        			<td bo-text="credit.genreName[0].name"></td>
+        			<td bo-text="credit.year"></td>
+        			<td bo-text="credit.engi[0].name"></td>
+        			<td bo-text="credit.credit"></td>
         			<td>
         				<a href="#" ui-sref="credits.edit({ creditId: credit.id })" role="button" class="edit-credit btn btn-default btn-sm btn-block"><span class="glyphicon glyphicon-edit"></span> Edit</a>
         				<button class="btn btn-danger btn-sm btn-block" confirm-click="deleteCredit(credit.id, $index)" confirm-message="Are you sure?"><span class="glyphicon glyphicon-trash"></span> Delete</button>
@@ -41,4 +46,5 @@
         		</tr>
     	</tbody>
     </table>
+
 </div>

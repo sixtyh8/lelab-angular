@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('leLabApp').directive 'whitepaperForm', (Tags) ->
-    scope: {credit: '='}
+    scope: {whitepaper: '='}
     restrict: 'AE'
     templateUrl: 'views/directives/whitepaperForm.html'
     link: (scope, element, attrs) ->

@@ -11,7 +11,9 @@ angular.module('leLabApp', [
   'cgBusy',
   'xeditable',
   'confirmClick',
-  'flow'
+  'flow',
+  'pasvaz.bindonce',
+  'ui.bootstrap'
 ])
   .config ($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) ->
 

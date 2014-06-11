@@ -39,7 +39,7 @@ angular.module('leLabApp').service 'Whitepapers', (Restangular, $q) ->
         deferred = $q.defer()
         id = obj.id
 
-        credit = Restangular.one('whitepapers', id).get().then (result) ->
+        Restangular.one('whitepapers', id).get().then (result) ->
             result = obj
             result.put()
             deferred.resolve
