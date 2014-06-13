@@ -1,0 +1,30 @@
+<div ng-controller="UsersCtrl">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Users</h2>
+            <div cg-busy="usersPromise">
+                <table class="table table-striped" id="users-table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Admin</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="u in userList track by $index">
+                            <td>{{ u.username }}</td>
+                            <td>{{ u.email }}</td>
+                            <td>
+                                <p class="text-success" ng-show="u.admin"><span class="glyphicon glyphicon-ok"></span></p>
+                                <p class="text-warning" ng-hide="u.admin"><span class="glyphicon glyphicon-remove"></span></p>
+                            </td>
+                            <td><button class="btn btn-sm btn-danger pull-right" confirm-click="deleteUser(u.userId, $index)" confirm-message="Are you sure?"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -26,7 +26,9 @@
     "angular-ui-bootstrap": "~0.11.0",
     "smart-table": "~0.1.5",
     "angular-ui-tinymce": "~0.0.5",
-    "at-table": "~1.0.1"
+    "at-table": "~1.0.1",
+    "angular-webstorage": "~0.10.3",
+    "bootswatch-scss": "~3.0.3"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",

@@ -1,6 +1,6 @@
 <div ng-controller="CreditsCtrl.List" cg-busy="creditsPromise">
 
-    <table class="table table-striped table-bordered" id="credits-table" ng-show="false;">
+    <table class="table table-striped table-bordered" id="credits-table">
     	<thead>
     		<tr>
     			<th class="credit-id">ID</th>
@@ -14,7 +14,7 @@
     		</tr>
     	</thead>
     	<tbody>
-        	<tr ng-repeat="credit in credits.list track by credit.id | limitTo:totalDisplayed">
+        	<tr ng-repeat="credit in credits.list track by credit.id">
         			<td class="credit-id">
         				<div ng-show="credit.homepage_flag != 1" class="homepage-off-message">
         				    <span class="glyphicon glyphicon-eye-close"></span>

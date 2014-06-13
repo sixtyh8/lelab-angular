@@ -7628,7 +7628,7 @@ td.visible-print {
     display: none !important;
   }
 }
-/* line 5, ../../app/styles/main.scss */
+/* line 7, ../../app/styles/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -7637,14 +7637,14 @@ td.visible-print {
 }
 
 /* Space out content a bit */
-/* line 13, ../../app/styles/main.scss */
+/* line 15, ../../app/styles/main.scss */
 body {
   padding-top: 80px;
   padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 21, ../../app/styles/main.scss */
+/* line 23, ../../app/styles/main.scss */
 .header,
 .marketing,
 .footer {
@@ -7653,13 +7653,13 @@ body {
 }
 
 /* Custom page header */
-/* line 27, ../../app/styles/main.scss */
+/* line 29, ../../app/styles/main.scss */
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
 
 /* Make the masthead heading the same height as the navigation */
-/* line 32, ../../app/styles/main.scss */
+/* line 34, ../../app/styles/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -7668,57 +7668,57 @@ body {
 }
 
 /* Custom page footer */
-/* line 40, ../../app/styles/main.scss */
+/* line 42, ../../app/styles/main.scss */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 46, ../../app/styles/main.scss */
+/* line 48, ../../app/styles/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 51, ../../app/styles/main.scss */
+/* line 53, ../../app/styles/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 56, ../../app/styles/main.scss */
+/* line 58, ../../app/styles/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-/* line 62, ../../app/styles/main.scss */
+/* line 64, ../../app/styles/main.scss */
 .marketing {
   margin: 40px 0;
 }
 
-/* line 66, ../../app/styles/main.scss */
+/* line 68, ../../app/styles/main.scss */
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Le Lab Tools */
-/* line 71, ../../app/styles/main.scss */
+/* line 73, ../../app/styles/main.scss */
 .table-list-name-column {
   width: 400px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 77, ../../app/styles/main.scss */
+  /* line 79, ../../app/styles/main.scss */
   .container {
     max-width: 1100px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 84, ../../app/styles/main.scss */
+  /* line 86, ../../app/styles/main.scss */
   .header,
   .marketing,
   .footer {
@@ -7727,19 +7727,19 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 89, ../../app/styles/main.scss */
+  /* line 91, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 93, ../../app/styles/main.scss */
+  /* line 95, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
 }
 /* Animations */
-/* line 100, ../../app/styles/main.scss */
+/* line 102, ../../app/styles/main.scss */
 .fader-animation.ng-enter,
 .fader-animation.ng-leave {
   -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
@@ -7748,49 +7748,49 @@ body {
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
 }
 
-/* line 106, ../../app/styles/main.scss */
+/* line 108, ../../app/styles/main.scss */
 .fader-animation.ng-enter {
   -ms-opacity: 0;
   opacity: 0;
 }
 
-/* line 110, ../../app/styles/main.scss */
+/* line 112, ../../app/styles/main.scss */
 .fader-animation.ng-enter.ng-enter-active {
   -ms-opacity: 1;
   opacity: 1;
 }
 
-/* line 114, ../../app/styles/main.scss */
+/* line 116, ../../app/styles/main.scss */
 .fader-animation.ng-leave {
   -ms-opacity: 1;
   opacity: 1;
 }
 
-/* line 118, ../../app/styles/main.scss */
+/* line 120, ../../app/styles/main.scss */
 .fader-animation.ng-leave.ng-leave-active {
   -ms-opacity: 0;
   opacity: 0;
 }
 
 /* Sign in */
-/* line 126, ../../app/styles/main.scss */
+/* line 128, ../../app/styles/main.scss */
 .form-signin {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
 }
 
-/* line 132, ../../app/styles/main.scss */
+/* line 134, ../../app/styles/main.scss */
 .form-signin .form-signin-heading, .form-signin .checkbox {
   margin-bottom: 10px;
 }
 
-/* line 136, ../../app/styles/main.scss */
+/* line 138, ../../app/styles/main.scss */
 .form-signin .checkbox {
   font-weight: normal;
 }
 
-/* line 140, ../../app/styles/main.scss */
+/* line 142, ../../app/styles/main.scss */
 .form-signin .form-control {
   position: relative;
   font-size: 16px;
@@ -7801,26 +7801,26 @@ body {
   box-sizing: border-box;
 }
 
-/* line 150, ../../app/styles/main.scss */
+/* line 152, ../../app/styles/main.scss */
 .form-signin .form-control:focus {
   z-index: 2;
 }
 
-/* line 154, ../../app/styles/main.scss */
+/* line 156, ../../app/styles/main.scss */
 .form-signin input[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-/* line 160, ../../app/styles/main.scss */
+/* line 162, ../../app/styles/main.scss */
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-/* line 166, ../../app/styles/main.scss */
+/* line 168, ../../app/styles/main.scss */
 .account-wall {
   margin-top: 20px;
   padding: 40px 0px 20px 0px;
@@ -7830,7 +7830,7 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* line 175, ../../app/styles/main.scss */
+/* line 177, ../../app/styles/main.scss */
 .login-title {
   color: #555;
   font-size: 18px;
@@ -7838,7 +7838,7 @@ body {
   display: block;
 }
 
-/* line 182, ../../app/styles/main.scss */
+/* line 184, ../../app/styles/main.scss */
 .profile-img {
   width: 96px;
   height: 96px;
@@ -7849,13 +7849,98 @@ body {
   border-radius: 50%;
 }
 
-/* line 192, ../../app/styles/main.scss */
+/* line 194, ../../app/styles/main.scss */
 .need-help {
   margin-top: 10px;
 }
 
-/* line 196, ../../app/styles/main.scss */
+/* line 198, ../../app/styles/main.scss */
 .new-account {
   display: block;
   margin-top: 10px;
+}
+
+/* line 205, ../../app/styles/main.scss */
+.profile {
+  display: inline-block;
+}
+
+/* line 210, ../../app/styles/main.scss */
+.divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 214, ../../app/styles/main.scss */
+.emphasis {
+  border-top: 4px solid transparent;
+}
+
+/* line 218, ../../app/styles/main.scss */
+.emphasis:hover {
+  border-top: 4px solid #1abc9c;
+}
+
+/* line 222, ../../app/styles/main.scss */
+.emphasis h2 {
+  margin-bottom: 0;
+}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 228, ../../app/styles/main.scss */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin-top: 20px;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+/* line 238, ../../app/styles/main.scss */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 242, ../../app/styles/main.scss */
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 248, ../../app/styles/main.scss */
+.navbar-content {
+  width: 320px;
+  min-height: 132px;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+/* line 255, ../../app/styles/main.scss */
+.navbar-content:before, .navbar-content:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+/* line 260, ../../app/styles/main.scss */
+.navbar-nav.navbar-right:last-child {
+  margin-right: 15px !important;
+}
+
+/* line 264, ../../app/styles/main.scss */
+.navbar-footer {
+  background-color: #DDD;
+}
+
+/* line 267, ../../app/styles/main.scss */
+.navbar-footer-content {
+  padding: 15px 15px 15px 15px;
+}
+
+/* line 268, ../../app/styles/main.scss */
+.dropdown-menu {
+  padding: 0px;
+  overflow: hidden;
 }

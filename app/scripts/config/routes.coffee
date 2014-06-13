@@ -5,21 +5,38 @@ angular.module('leLabApp').config ($urlRouterProvider, $stateProvider) ->
     $urlRouterProvider.otherwise "/"
 
     # Map /credits to /credits/list
-    $urlRouterProvider.when("/", "/credits")
     $urlRouterProvider.when("/credits","/credits/list")
     $urlRouterProvider.when("/whitepapers", "/whitepapers/list")
 
     # Index
-    # $stateProvider.state("index",
-    #     url: "/"
-    #     views:
-    #         header:
-    #             templateUrl: "views/partials/header.auth.html"
-    #         main:
-    #             templateUrl: "views/index.html"
+    $stateProvider.state("index",
+        url: "/"
+        views:
+            header:
+                templateUrl: "views/partials/header.auth.html"
+            main:
+                templateUrl: "views/index.html"
+
+    # Profile
+    ).state("profile",
+        url: "/profile"
+        views:
+            header:
+                templateUrl: "views/partials/header.auth.html"
+            main:
+                templateUrl: "views/profile.html"
+
+    # Users
+    ).state("users",
+        url: "/users"
+        views:
+            header:
+                templateUrl: "views/partials/header.auth.html"
+            main:
+                templateUrl: "views/users.html"
 
     # Credits
-    $stateProvider.state("credits",
+    ).state("credits",
         url: "/credits"
         views:
             header:

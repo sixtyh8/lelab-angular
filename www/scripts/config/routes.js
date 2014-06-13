@@ -2,10 +2,39 @@
   'use strict';
   angular.module('leLabApp').config(function($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise("/");
-    $urlRouterProvider.when("/", "/credits");
     $urlRouterProvider.when("/credits", "/credits/list");
     $urlRouterProvider.when("/whitepapers", "/whitepapers/list");
-    return $stateProvider.state("credits", {
+    return $stateProvider.state("index", {
+      url: "/",
+      views: {
+        header: {
+          templateUrl: "views/partials/header.auth.html"
+        },
+        main: {
+          templateUrl: "views/index.html"
+        }
+      }
+    }).state("profile", {
+      url: "/profile",
+      views: {
+        header: {
+          templateUrl: "views/partials/header.auth.html"
+        },
+        main: {
+          templateUrl: "views/profile.html"
+        }
+      }
+    }).state("users", {
+      url: "/users",
+      views: {
+        header: {
+          templateUrl: "views/partials/header.auth.html"
+        },
+        main: {
+          templateUrl: "views/users.html"
+        }
+      }
+    }).state("credits", {
       url: "/credits",
       views: {
         header: {
