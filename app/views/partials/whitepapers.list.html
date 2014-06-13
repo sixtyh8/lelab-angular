@@ -15,10 +15,9 @@
         			</td>
         			<td>
                         <h4 style="margin-top:0;">{{ whitepaper.title }}</h4>
-                        {{ whitepaper.body | truncate:140 }}
                     </td>
         			<td>
-        				<a href="#" ui-sref="whitepapers.edit({ whitepapersId: whitepaper.id })" role="button" class="edit-whitepaper btn btn-default btn-sm btn-block"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+        				<a href="#" ui-sref="whitepapers.edit({ whitepaperId: whitepaper.id })" role="button" class="edit-whitepaper btn btn-default btn-sm btn-block"><span class="glyphicon glyphicon-edit"></span> Edit</a>
         				<button class="btn btn-danger btn-sm btn-block" confirm-click="deleteWhitepaper(whitepaper.id, $index)" confirm-message="Are you sure?"><span class="glyphicon glyphicon-trash"></span> Delete</button>
         			</td>
         		</tr>

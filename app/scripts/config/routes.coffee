@@ -56,7 +56,7 @@ angular.module('leLabApp').config ($urlRouterProvider, $stateProvider) ->
             whitepapers:
                 templateUrl: "views/partials/whitepapers.list.html"
     ).state("whitepapers.edit"
-        url: "/edit/:creditId"
+        url: "/edit/:whitepaperId"
         views:
             whitepapers:
                 templateUrl: "views/partials/whitepapers.edit.html"
@@ -92,4 +92,13 @@ angular.module('leLabApp').config ($urlRouterProvider, $stateProvider) ->
                 templateUrl: "views/partials/header.auth.html"
             main:
                 templateUrl: "views/engineers.html"
+
+    # Login
+    ).state("login"
+        url: "/login"
+        views:
+            header:
+                templateUrl: "views/partials/header.unauth.html"
+            main:
+                templateUrl: "views/login.html"
     )

@@ -1,9 +1,6 @@
 'use strict'
 
 angular.module('leLabApp').controller 'WhitepapersCtrl', ($scope, $filter) ->
-    newDate = new Date()
-    $scope.now = $filter('date')(newDate, 'shortDate')
-
 
 angular.module('leLabApp').controller 'WhitepapersCtrl.List', ($scope, $state, Whitepapers) ->
 
@@ -33,9 +30,14 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $
 angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, Whitepapers, Tags) ->
 
     $scope.whitepaper =
-        created_at: $scope.now
+        created_at: null
 
 
     $scope.saveWhitepaper = ->
+        newDate = new Date()
+        $scope.now = $filter('date')(newDate, 'shortDate')
+        $scope.whitepaper.created_at = $scope.now
+
         Whitepapers.save($scope.whitepaper).then (data) ->
+            console.log "saved!"
             $state.go('whitepapers')

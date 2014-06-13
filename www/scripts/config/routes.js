@@ -54,7 +54,7 @@
         }
       }
     }).state("whitepapers.edit", {
-      url: "/edit/:creditId",
+      url: "/edit/:whitepaperId",
       views: {
         whitepapers: {
           templateUrl: "views/partials/whitepapers.edit.html"
@@ -95,6 +95,16 @@
         },
         main: {
           templateUrl: "views/engineers.html"
+        }
+      }
+    }).state("login", {
+      url: "/login",
+      views: {
+        header: {
+          templateUrl: "views/partials/header.unauth.html"
+        },
+        main: {
+          templateUrl: "views/login.html"
         }
       }
     });
