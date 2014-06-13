@@ -23,7 +23,8 @@
     "tag": "1.4.0",
     "commit": "34c2951d5fb5d823fb0d7bc2b4bb99f71d6956e2"
   },
-  "_source": "https://github.com/mgonto/restangular.git",
+  "_source": "git://github.com/mgonto/restangular.git",
   "_target": "~1.4.0",
-  "_originalSource": "restangular"
+  "_originalSource": "restangular",
+  "_direct": true
 }
