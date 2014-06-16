@@ -592,6 +592,8 @@
 	},
 	"file_history":
 	[
+		"/D/WebDev/lelab-angular/.gitignore",
+		"/D/WebDev/lelab-angular/www/styles/main.css",
 		"/D/WebDev/lelab-angular/app/styles/main.scss",
 		"/D/WebDev/lelab-angular/app/views/engineers.html",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/user.coffee",
@@ -636,7 +638,6 @@
 		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/engineers.coffee",
 		"/D/WebDev/lelab-angular/app/views/tags.html",
-		"/D/WebDev/lelab-angular/.gitignore",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/categories.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/directives/imageUpload.coffee",
 		"/D/WebDev/lelab-angular/app/views/directives/imageUpload.html",
@@ -718,8 +719,7 @@
 		"/D/WebDev/ysc-front-end/app/views/food.html",
 		"/D/WebDev/ysc-front-end/app/views/partials/modal_login.html",
 		"/D/WebDev/ysc-front-end/app/images/POWERUP_Logo.jpg",
-		"/D/WebDev/ysc-front-end/app/images/POWERUP_Logo_small.png",
-		"/D/WebDev/ysc-front-end/app/styles/partials/_sign-in.scss"
+		"/D/WebDev/ysc-front-end/app/images/POWERUP_Logo_small.png"
 	],
 	"find":
 	{
@@ -1044,8 +1044,8 @@
 						"selection":
 						[
 							[
-								1532,
-								1532
+								0,
+								2217
 							]
 						],
 						"settings":
