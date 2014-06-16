@@ -21,6 +21,7 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $
 
     Whitepapers.get($stateParams.whitepaperId).then (data) ->
         $scope.whitepaper = data
+        # $scope.whitepaper.body = $sce.trustAsHtml($scope.whitepaper.body)
 
     $scope.saveWhitepaper = ->
         Whitepapers.update($scope.whitepaper).then (data) ->

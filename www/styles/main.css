@@ -7628,11 +7628,7 @@ td.visible-print {
     display: none !important;
   }
 }
-<<<<<<< HEAD
-/* line 7, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\000035}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\000037}}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -7641,22 +7637,14 @@ td.visible-print {
 }
 
 /* Space out content a bit */
-<<<<<<< HEAD
-/* line 15, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000313}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000315}}
 body {
   padding-top: 80px;
   padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-<<<<<<< HEAD
-/* line 23, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000321}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000323}}
 .header,
 .marketing,
 .footer {
@@ -7665,21 +7653,13 @@ body {
 }
 
 /* Custom page header */
-<<<<<<< HEAD
-/* line 29, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000327}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000329}}
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
 
 /* Make the masthead heading the same height as the navigation */
-<<<<<<< HEAD
-/* line 34, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000332}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000334}}
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -7688,93 +7668,57 @@ body {
 }
 
 /* Custom page footer */
-<<<<<<< HEAD
-/* line 42, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000340}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000342}}
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-<<<<<<< HEAD
-/* line 48, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000346}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000348}}
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-<<<<<<< HEAD
-/* line 53, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000351}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000353}}
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
-<<<<<<< HEAD
-/* line 58, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000356}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000358}}
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
 /* Supporting marketing content */
-<<<<<<< HEAD
-/* line 64, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000362}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000364}}
 .marketing {
   margin: 40px 0;
 }
 
-<<<<<<< HEAD
-/* line 68, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000366}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000368}}
 .marketing p + h4 {
   margin-top: 28px;
 }
 
 /* Le Lab Tools */
-<<<<<<< HEAD
-/* line 73, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000371}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000373}}
 .table-list-name-column {
   width: 400px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
-  /* line 79, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000377}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000379}}
   .container {
     max-width: 1100px;
   }
 
   /* Remove the padding we set earlier */
-<<<<<<< HEAD
-  /* line 86, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000384}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000386}}
   .header,
   .marketing,
   .footer {
@@ -7783,31 +7727,19 @@ body {
   }
 
   /* Space out the masthead */
-<<<<<<< HEAD
-  /* line 91, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000389}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000391}}
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-<<<<<<< HEAD
-  /* line 95, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000393}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\0000395}}
   .jumbotron {
     border-bottom: 0;
   }
 }
 /* Animations */
-<<<<<<< HEAD
-/* line 102, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003100}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003102}}
 .fader-animation.ng-enter,
 .fader-animation.ng-leave {
   -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
@@ -7816,81 +7748,49 @@ body {
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
 }
 
-<<<<<<< HEAD
-/* line 108, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003106}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003108}}
 .fader-animation.ng-enter {
   -ms-opacity: 0;
   opacity: 0;
 }
 
-<<<<<<< HEAD
-/* line 112, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003110}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003112}}
 .fader-animation.ng-enter.ng-enter-active {
   -ms-opacity: 1;
   opacity: 1;
 }
 
-<<<<<<< HEAD
-/* line 116, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003114}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003116}}
 .fader-animation.ng-leave {
   -ms-opacity: 1;
   opacity: 1;
 }
 
-<<<<<<< HEAD
-/* line 120, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003118}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003120}}
 .fader-animation.ng-leave.ng-leave-active {
   -ms-opacity: 0;
   opacity: 0;
 }
 
 /* Sign in */
-<<<<<<< HEAD
-/* line 128, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003126}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003128}}
 .form-signin {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-/* line 134, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003132}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003134}}
 .form-signin .form-signin-heading, .form-signin .checkbox {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-/* line 138, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003136}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003138}}
 .form-signin .checkbox {
   font-weight: normal;
 }
 
-<<<<<<< HEAD
-/* line 142, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003140}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003142}}
 .form-signin .form-control {
   position: relative;
   font-size: 16px;
@@ -7901,42 +7801,26 @@ body {
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-/* line 152, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003150}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003152}}
 .form-signin .form-control:focus {
   z-index: 2;
 }
 
-<<<<<<< HEAD
-/* line 156, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003154}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003156}}
 .form-signin input[type="text"] {
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-<<<<<<< HEAD
-/* line 162, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003160}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003162}}
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-<<<<<<< HEAD
-/* line 168, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003166}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003168}}
 .account-wall {
   margin-top: 20px;
   padding: 40px 0px 20px 0px;
@@ -7946,11 +7830,7 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-<<<<<<< HEAD
-/* line 177, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003175}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003177}}
 .login-title {
   color: #555;
   font-size: 18px;
@@ -7958,11 +7838,7 @@ body {
   display: block;
 }
 
-<<<<<<< HEAD
-/* line 184, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003182}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003184}}
 .profile-img {
   width: 96px;
   height: 96px;
@@ -7973,52 +7849,44 @@ body {
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
-/* line 194, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003192}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003194}}
 .need-help {
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
-/* line 198, ../../app/styles/main.scss */
-=======
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003196}}
->>>>>>> ae8b42190487086eed058b7ecd72ba94adcd44b7
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003198}}
 .new-account {
   display: block;
   margin-top: 10px;
 }
 
-/* line 205, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003205}}
 .profile {
   display: inline-block;
 }
 
-/* line 210, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003210}}
 .divider {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 214, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003214}}
 .emphasis {
   border-top: 4px solid transparent;
 }
 
-/* line 218, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003218}}
 .emphasis:hover {
   border-top: 4px solid #1abc9c;
 }
 
-/* line 222, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003222}}
 .emphasis h2 {
   margin-bottom: 0;
 }
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
-/* line 228, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003228}}
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -8029,19 +7897,19 @@ body {
 }
 
 /* Flip around the padding for proper display in narrow viewports */
-/* line 238, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003238}}
 .navbar-wrapper .container {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 242, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003242}}
 .navbar-wrapper .navbar {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 248, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003248}}
 .navbar-content {
   width: 320px;
   min-height: 132px;
@@ -8049,29 +7917,29 @@ body {
   padding-bottom: 0px;
 }
 
-/* line 255, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003255}}
 .navbar-content:before, .navbar-content:after {
   display: table;
   content: "";
   line-height: 0;
 }
 
-/* line 260, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003260}}
 .navbar-nav.navbar-right:last-child {
   margin-right: 15px !important;
 }
 
-/* line 264, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003264}}
 .navbar-footer {
   background-color: #DDD;
 }
 
-/* line 267, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003267}}
 .navbar-footer-content {
   padding: 15px 15px 15px 15px;
 }
 
-/* line 268, ../../app/styles/main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/guillaume\/Documents\/WebDev\/lelab-angular\/app\/styles\/main\.scss}line{font-family:\00003268}}
 .dropdown-menu {
   padding: 0px;
   overflow: hidden;

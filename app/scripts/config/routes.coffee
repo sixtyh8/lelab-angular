@@ -17,15 +17,6 @@ angular.module('leLabApp').config ($urlRouterProvider, $stateProvider) ->
             main:
                 templateUrl: "views/index.html"
 
-    # Profile
-    ).state("profile",
-        url: "/profile"
-        views:
-            header:
-                templateUrl: "views/partials/header.auth.html"
-            main:
-                templateUrl: "views/profile.html"
-
     # Users
     ).state("users",
         url: "/users"

@@ -18,3 +18,19 @@ angular.module('leLabApp').service 'User', (Restangular, $q) ->
 
         deferred.promise
 
+    create: (user) ->
+        deferred = $q.defer()
+
+        Restangular.all("users").post({ 'data': user }).then (results) ->
+            deferred.resolve results
+
+        deferred.promise
+
+    delete: (id) ->
+        deferred = $q.defer()
+
+        user = Restangular.one("users", id)
+        user.remove().then (data) ->
+            deferred.resolve data
+
+        deferred.promise

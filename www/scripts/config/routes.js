@@ -14,16 +14,6 @@
           templateUrl: "views/index.html"
         }
       }
-    }).state("profile", {
-      url: "/profile",
-      views: {
-        header: {
-          templateUrl: "views/partials/header.auth.html"
-        },
-        main: {
-          templateUrl: "views/profile.html"
-        }
-      }
     }).state("users", {
       url: "/users",
       views: {
