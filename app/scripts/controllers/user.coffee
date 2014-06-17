@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('leLabApp').controller 'UsersCtrl', ($scope, User) ->
+angular.module('leLabApp').controller 'UsersCtrl', ($scope, $filter, User) ->
 
     setUser = ->
         $scope.newUser =
@@ -8,6 +8,23 @@ angular.module('leLabApp').controller 'UsersCtrl', ($scope, User) ->
             email: ''
             password: ''
             admin: false
+
+    $scope.statuses = [
+        {value: 'Y', text: 'Admin'}
+        {value: 'N', text: 'Editor'}
+    ]
+
+    $scope.showStatus = (user) ->
+
+        selected = []
+
+        if user.admin?
+          selected = $filter('filter')($scope.statuses, {value: user.admin})
+
+        if selected.length
+            return selected[0].text
+        else
+            return 'Not set'
 
     $scope.usersPromise = User.list().then (data) ->
         $scope.userList = data
@@ -22,5 +39,9 @@ angular.module('leLabApp').controller 'UsersCtrl', ($scope, User) ->
     $scope.deleteUser = (userId, index) ->
         User.delete(userId).then (data) ->
             $scope.userList.splice(index, 1)
+
+    $scope.saveUser = (data, id) ->
+        User.update(id, data).then (data) ->
+            return true
 
     setUser()

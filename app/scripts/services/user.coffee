@@ -34,3 +34,16 @@ angular.module('leLabApp').service 'User', (Restangular, $q) ->
             deferred.resolve data
 
         deferred.promise
+
+    update: (id, user) ->
+        deferred = $q.defer()
+
+        genre = Restangular.one("users", id).get().then (result) ->
+
+            result.update = user
+            result.update.id = id
+
+            result.put().then (data) ->
+                deferred.resolve data
+
+        deferred.promise
