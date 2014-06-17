@@ -14,27 +14,38 @@
     		</tr>
     	</thead>
     	<tbody>
-        	<tr ng-repeat="credit in credits.list track by credit.id">
-        			<td class="credit-id">
-        				<div ng-show="credit.homepage_flag != 1" class="homepage-off-message">
-        				    <span class="glyphicon glyphicon-eye-close"></span>
-        				</div>
-        				<span ng-bind="credit.id"></span>
-        			</td>
-        			<td>
-        				<img ng-src="/images/credits/{{ credit.imgName[0].small_name }}" />
-        			</td>
-        			<td><span ng-bind="credit.album_name"></span><br /><span ng-bind="credit.artist_name"></span></td>
-        			<td ng-bind="credit.genreName[0].name"></td>
-        			<td ng-bind="credit.year"></td>
-        			<td ng-bind="credit.engi[0].name"></td>
-        			<td ng-bind="credit.credit"></td>
-        			<td>
-        				<a href="#" ui-sref="credits.edit({ creditId: credit.id })" role="button" class="edit-credit btn btn-default btn-sm btn-block"><span class="glyphicon glyphicon-edit"></span> Edit</a>
-        				<button class="btn btn-danger btn-sm btn-block" confirm-click="deleteCredit(credit.id, $index)" confirm-message="Are you sure?"><span class="glyphicon glyphicon-trash"></span> Delete</button>
-        			</td>
-        		</tr>
+        	<tr ng-repeat="credit in creditsList track by credit.id">
+    			<td class="credit-id">
+    				<div ng-show="credit.homepage_flag != 1" class="homepage-off-message">
+    				    <span class="glyphicon glyphicon-eye-close"></span>
+    				</div>
+    				<span ng-bind="credit.id"></span>
+    			</td>
+    			<td>
+    				<img ng-src="/images/credits/{{ credit.imgName[0].small_name }}" />
+    			</td>
+    			<td><span ng-bind="credit.album_name"></span><br /><span ng-bind="credit.artist_name"></span></td>
+    			<td ng-bind="credit.genreName[0].name"></td>
+    			<td ng-bind="credit.year"></td>
+    			<td ng-bind="credit.engi[0].name"></td>
+    			<td ng-bind="credit.credit"></td>
+    			<td>
+    				<a href="#" ui-sref="credits.edit({ creditId: credit.id })" role="button" class="edit-credit btn btn-default btn-sm btn-block"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+    				<button class="btn btn-danger btn-sm btn-block" confirm-click="deleteCredit(credit.id, $index)" confirm-message="Are you sure?"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    			</td>
+        	</tr>
     	</tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <button type="button" class="btn btn-default" ng-click="previousPage()">Previous</button>
+                    <button type="button" class="btn btn-default" ng-click="nextPage()">Next</button>
+                </td>
+                <td colspan="4">
+                    <input type="text" class="form-control" ng-model="searchTerm" placeholder="Keyword"><button type="button" class="btn btn-primary" ng-click="searchCredits()">Search</button>
+                </td>
+            </tr>
+        </tfoot>
     </table>
 
 </div>

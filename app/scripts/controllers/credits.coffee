@@ -1,20 +1,37 @@
 'use strict'
 
-angular.module('leLabApp').controller 'CreditsCtrl', ($scope, $filter) ->
+angular.module('leLabApp').controller 'CreditsCtrl', ($scope) ->
     $scope.currentYear = new Date().getFullYear();
 
 
-angular.module('leLabApp').controller 'CreditsCtrl.List', ($scope, $state, Credits) ->
+angular.module('leLabApp').controller 'CreditsCtrl.List', ($scope, $state, $filter, Credits) ->
 
-    $scope.creditsPromise = Credits.list().then (data) ->
+    $scope.limit = 5
+    $scope.offset = 0
 
-        $scope.credits =
-            list : data
+    $scope.getCredits = ->
+        Credits.list($scope.limit, $scope.offset).then (data) ->
+            $scope.creditsList = data
+
+    $scope.creditsPromise = $scope.getCredits()
+
+    $scope.nextPage = ->
+        $scope.offset = $scope.offset + $scope.limit
+        $scope.getCredits()
+
+    $scope.previousPage = ->
+        $scope.offset = $scope.offset - $scope.limit
+        $scope.getCredits()
+
+    $scope.searchCredits = ->
+        $scope.creditsPromise = Credits.search($scope.searchTerm).then (data) ->
+            $scope.creditsList = data
+            #Add highlight
 
     # Delete a credit
     $scope.deleteCredit = (creditID, index) ->
         Credits.delete(creditID).then (data) ->
-            $scope.credits.list.splice(index, 1)
+            $scope.creditsList.splice(index, 1)
 
 
 angular.module('leLabApp').controller 'CreditsCtrl.Edit', ($scope, $state, $stateParams, Credits, Engineers, Genres) ->

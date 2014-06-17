@@ -1,11 +1,6 @@
 (function() {
   'use strict';
-  angular.module('leLabApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRoute', 'restangular', 'ui.router', 'cgBusy', 'xeditable', 'confirmClick', 'flow', 'pasvaz.bindonce', 'ui.bootstrap', 'ui.tinymce', 'webStorageModule']).config(function($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) {
-    RestangularProvider.setBaseUrl('http://api.lelab.local/');
-    return RestangularProvider.setRestangularFields({
-      id: "_id"
-    });
-  }).run(function($rootScope, $state, editableOptions, $filter, Session) {
+  angular.module('leLabApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRoute', 'restangular', 'ui.router', 'cgBusy', 'xeditable', 'confirmClick', 'flow', 'pasvaz.bindonce', 'ui.bootstrap', 'ui.tinymce', 'webStorageModule', 'angular-data.DSCacheFactory']).run(function($rootScope, $state, editableOptions, $filter, Session) {
     var routeAdmin, routeClean, routesThatDontRequireAuth, routesThatRequireAdmin;
     $rootScope.$state = $state;
     routesThatDontRequireAuth = ['/login'];

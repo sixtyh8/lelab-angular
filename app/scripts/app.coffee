@@ -14,15 +14,9 @@ angular.module('leLabApp', [
   'pasvaz.bindonce',
   'ui.bootstrap',
   'ui.tinymce',
-  'webStorageModule'
+  'webStorageModule',
+  'angular-data.DSCacheFactory'
 ])
-  .config ($routeProvider, RestangularProvider, $locationProvider, $stateProvider, $urlRouterProvider) ->
-
-    #$locationProvider.html5Mode(true)
-
-    RestangularProvider.setBaseUrl('http://api.lelab.local/')
-    RestangularProvider.setRestangularFields({ id: "_id" })
-
 
   .run ($rootScope, $state, editableOptions, $filter, Session) ->
     # Assign current state to rootScope to make it available for the menu highlight

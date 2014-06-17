@@ -1,26 +1,41 @@
 'use strict'
 
-angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
+angular.module('leLabApp').service 'Credits', (Restangular, $q, DSCacheFactory) ->
 
-    credits = Restangular.all("credits")
+    credits = Restangular.all('credits')
+    cache = DSCacheFactory 'cache',
+        maxAge: 90000000000000,
+        storageMode: 'localStorage' # This cache will sync itself with `localStorage`.
 
     # Works
-    list: ->
-    	deferred = $q.defer()
+    list: (limit, offset) ->
+        deferred = $q.defer()
 
-    	credits.getList().then ((results) ->
+        if cache.get('credits')
+            results = cache.get('credits')
             deferred.resolve results
-        ), (response) ->
-            console.log response
-            deferred.reject response
+        else
+            Restangular.one('credits').get({'limit': limit, 'offset': offset}).then ((results) ->
+                #cache.put('credits', results)
+                deferred.resolve results
+            ), (response) ->
+                deferred.reject response
 
-    	deferred.promise
+        deferred.promise
 
     # Works
     get: (id) ->
         deferred = $q.defer()
 
         Restangular.one('credits', id).get().then (results) ->
+            deferred.resolve results
+
+        deferred.promise
+
+    search: (searchTerm) ->
+        deferred = $q.defer()
+
+        Restangular.one('credits/search').get({'keyword': searchTerm}).then (results) ->
             deferred.resolve results
 
         deferred.promise
@@ -32,6 +47,7 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
         credit.genre = credit.genreName[0].name
 
         credits.post({ 'data': credit }).then (results) ->
+            cache.put('credits', results)
             deferred.resolve results
 
         deferred.promise
@@ -43,8 +59,9 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
 
         credit = Restangular.one('credits', id).get().then (result) ->
             result = obj
-            result.put()
-            deferred.resolve
+            result.put().then (results) ->
+                cache.put('credits', results)
+                deferred.resolve results
 
         deferred.promise
 
@@ -53,6 +70,7 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q) ->
         deferred = $q.defer()
 
         Restangular.one('credits', id).remove().then (results) ->
+            cache.put('credits', results)
             deferred.resolve results
 
         deferred.promise

@@ -1,24 +1,45 @@
 (function() {
   'use strict';
-  angular.module('leLabApp').service('Credits', function(Restangular, $q) {
-    var credits;
-    credits = Restangular.all("credits");
+  angular.module('leLabApp').service('Credits', function(Restangular, $q, DSCacheFactory) {
+    var cache, credits;
+    credits = Restangular.all('credits');
+    cache = DSCacheFactory('cache', {
+      maxAge: 90000000000000,
+      storageMode: 'localStorage'
+    });
     return {
-      list: function() {
-        var deferred;
+      list: function(limit, offset) {
+        var deferred, results;
         deferred = $q.defer();
-        credits.getList().then((function(results) {
-          return deferred.resolve(results);
-        }), function(response) {
-          console.log(response);
-          return deferred.reject(response);
-        });
+        if (cache.get('credits')) {
+          results = cache.get('credits');
+          deferred.resolve(results);
+        } else {
+          Restangular.one('credits').get({
+            'limit': limit,
+            'offset': offset
+          }).then((function(results) {
+            return deferred.resolve(results);
+          }), function(response) {
+            return deferred.reject(response);
+          });
+        }
         return deferred.promise;
       },
       get: function(id) {
         var deferred;
         deferred = $q.defer();
         Restangular.one('credits', id).get().then(function(results) {
+          return deferred.resolve(results);
+        });
+        return deferred.promise;
+      },
+      search: function(searchTerm) {
+        var deferred;
+        deferred = $q.defer();
+        Restangular.one('credits/search').get({
+          'keyword': searchTerm
+        }).then(function(results) {
           return deferred.resolve(results);
         });
         return deferred.promise;
@@ -30,6 +51,7 @@
         credits.post({
           'data': credit
         }).then(function(results) {
+          cache.put('credits', results);
           return deferred.resolve(results);
         });
         return deferred.promise;
@@ -40,8 +62,10 @@
         id = obj.id;
         credit = Restangular.one('credits', id).get().then(function(result) {
           result = obj;
-          result.put();
-          return deferred.resolve;
+          return result.put().then(function(results) {
+            cache.put('credits', results);
+            return deferred.resolve(results);
+          });
         });
         return deferred.promise;
       },
@@ -49,6 +73,7 @@
         var deferred;
         deferred = $q.defer();
         Restangular.one('credits', id).remove().then(function(results) {
+          cache.put('credits', results);
           return deferred.resolve(results);
         });
         return deferred.promise;

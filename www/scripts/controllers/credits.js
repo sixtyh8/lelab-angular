@@ -1,18 +1,34 @@
 (function() {
   'use strict';
-  angular.module('leLabApp').controller('CreditsCtrl', function($scope, $filter) {
+  angular.module('leLabApp').controller('CreditsCtrl', function($scope) {
     return $scope.currentYear = new Date().getFullYear();
   });
 
-  angular.module('leLabApp').controller('CreditsCtrl.List', function($scope, $state, Credits) {
-    $scope.creditsPromise = Credits.list().then(function(data) {
-      return $scope.credits = {
-        list: data
-      };
-    });
+  angular.module('leLabApp').controller('CreditsCtrl.List', function($scope, $state, $filter, Credits) {
+    $scope.limit = 5;
+    $scope.offset = 0;
+    $scope.getCredits = function() {
+      return Credits.list($scope.limit, $scope.offset).then(function(data) {
+        return $scope.creditsList = data;
+      });
+    };
+    $scope.creditsPromise = $scope.getCredits();
+    $scope.nextPage = function() {
+      $scope.offset = $scope.offset + $scope.limit;
+      return $scope.getCredits();
+    };
+    $scope.previousPage = function() {
+      $scope.offset = $scope.offset - $scope.limit;
+      return $scope.getCredits();
+    };
+    $scope.searchCredits = function() {
+      return $scope.creditsPromise = Credits.search($scope.searchTerm).then(function(data) {
+        return $scope.creditsList = data;
+      });
+    };
     return $scope.deleteCredit = function(creditID, index) {
       return Credits["delete"](creditID).then(function(data) {
-        return $scope.credits.list.splice(index, 1);
+        return $scope.creditsList.splice(index, 1);
       });
     };
   });
