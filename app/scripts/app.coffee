@@ -13,9 +13,10 @@ angular.module('leLabApp', [
   'flow',
   'pasvaz.bindonce',
   'ui.bootstrap',
-  'ui.tinymce',
   'webStorageModule',
-  'angular-data.DSCacheFactory'
+  'angular-data.DSCacheFactory',
+  'infinite-scroll',
+  'textAngular'
 ])
 
   .run ($rootScope, $state, editableOptions, $filter, Session) ->

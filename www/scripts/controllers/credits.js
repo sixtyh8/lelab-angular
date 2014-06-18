@@ -4,22 +4,34 @@
     return $scope.currentYear = new Date().getFullYear();
   });
 
-  angular.module('leLabApp').controller('CreditsCtrl.List', function($scope, $state, $filter, Credits) {
-    $scope.limit = 5;
+  angular.module('leLabApp').controller('CreditsCtrl.List', function($scope, $state, $filter, $timeout, Credits) {
+    $scope.limit = 50;
     $scope.offset = 0;
+    $scope.loader = {
+      busy: false
+    };
     $scope.getCredits = function() {
+      $scope.loader.busy = true;
       return Credits.list($scope.limit, $scope.offset).then(function(data) {
-        return $scope.creditsList = data;
+        var credit, _i, _len;
+        if (data.length) {
+          if ($scope.creditsList != null) {
+            console.log('creditsList exists: push data');
+            console.log(data);
+            for (_i = 0, _len = data.length; _i < _len; _i++) {
+              credit = data[_i];
+              $scope.creditsList.push(credit);
+            }
+          } else {
+            console.log(data);
+            $scope.creditsList = data;
+          }
+          $scope.offset = $scope.offset + $scope.limit;
+          return $scope.loader.busy = false;
+        } else {
+
+        }
       });
-    };
-    $scope.creditsPromise = $scope.getCredits();
-    $scope.nextPage = function() {
-      $scope.offset = $scope.offset + $scope.limit;
-      return $scope.getCredits();
-    };
-    $scope.previousPage = function() {
-      $scope.offset = $scope.offset - $scope.limit;
-      return $scope.getCredits();
     };
     $scope.searchCredits = function() {
       return $scope.creditsPromise = Credits.search($scope.searchTerm).then(function(data) {
@@ -36,13 +48,19 @@
   angular.module('leLabApp').controller('CreditsCtrl.Edit', function($scope, $state, $stateParams, Credits, Engineers, Genres) {
     Credits.get($stateParams.creditId).then(function(data) {
       $scope.credit = data;
-      return $scope.selectedGenre = $scope.credit.genreName[0];
+      $scope.selectedGenre = $scope.credit.genreName[0];
+      return Genres.list().then(function(data) {
+        return $scope.credit.genres = data;
+      });
     });
-    return $scope.saveCredit = function() {
+    $scope.saveCredit = function() {
       return Credits.update($scope.credit).then(function(data) {
         return $state.go('credits');
       });
     };
+    return $scope.$on('flow::fileAdded', function(event, $flow, flowFile) {
+      return console.log(flowFile);
+    });
   });
 
   angular.module('leLabApp').controller('CreditsCtrl.New', function($scope, $state, Credits, Engineers, Genres, Images) {
@@ -56,6 +74,9 @@
       engineer_id: "1",
       credit: "Mastering"
     };
+    Genres.list().then(function(data) {
+      return $scope.credit.genres = data;
+    });
     return $scope.saveCredit = function() {
       return Credits.save($scope.credit).then(function(data) {
         return $state.go('credits');

@@ -15,7 +15,7 @@
             return scope.hasImage = false;
           }
         }, true);
-        scope.$on('flow::fileAdded', function(event, $flow, flowFile) {
+        scope.$on('credit.flow::fileAdded', function(event, $flow, flowFile) {
           return console.log(flowFile);
         });
         return scope.test = "Scope Test";

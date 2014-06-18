@@ -1,29 +1,20 @@
 (function() {
   'use strict';
   angular.module('leLabApp').service('Credits', function(Restangular, $q, DSCacheFactory) {
-    var cache, credits;
+    var credits;
     credits = Restangular.all('credits');
-    cache = DSCacheFactory('cache', {
-      maxAge: 90000000000000,
-      storageMode: 'localStorage'
-    });
     return {
       list: function(limit, offset) {
-        var deferred, results;
+        var deferred;
         deferred = $q.defer();
-        if (cache.get('credits')) {
-          results = cache.get('credits');
-          deferred.resolve(results);
-        } else {
-          Restangular.one('credits').get({
-            'limit': limit,
-            'offset': offset
-          }).then((function(results) {
-            return deferred.resolve(results);
-          }), function(response) {
-            return deferred.reject(response);
-          });
-        }
+        Restangular.one('credits').get({
+          'limit': limit,
+          'offset': offset
+        }).then((function(results) {
+          return deferred.resolve(results);
+        }), function(response) {
+          return deferred.reject(response);
+        });
         return deferred.promise;
       },
       get: function(id) {
@@ -51,7 +42,6 @@
         credits.post({
           'data': credit
         }).then(function(results) {
-          cache.put('credits', results);
           return deferred.resolve(results);
         });
         return deferred.promise;
@@ -63,7 +53,6 @@
         credit = Restangular.one('credits', id).get().then(function(result) {
           result = obj;
           return result.put().then(function(results) {
-            cache.put('credits', results);
             return deferred.resolve(results);
           });
         });
@@ -73,7 +62,6 @@
         var deferred;
         deferred = $q.defer();
         Restangular.one('credits', id).remove().then(function(results) {
-          cache.put('credits', results);
           return deferred.resolve(results);
         });
         return deferred.promise;

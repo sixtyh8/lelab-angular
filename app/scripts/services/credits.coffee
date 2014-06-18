@@ -3,23 +3,16 @@
 angular.module('leLabApp').service 'Credits', (Restangular, $q, DSCacheFactory) ->
 
     credits = Restangular.all('credits')
-    cache = DSCacheFactory 'cache',
-        maxAge: 90000000000000,
-        storageMode: 'localStorage' # This cache will sync itself with `localStorage`.
 
     # Works
     list: (limit, offset) ->
         deferred = $q.defer()
 
-        if cache.get('credits')
-            results = cache.get('credits')
+        Restangular.one('credits').get({'limit': limit, 'offset': offset}).then ((results) ->
+            #cache.put('credits', results)
             deferred.resolve results
-        else
-            Restangular.one('credits').get({'limit': limit, 'offset': offset}).then ((results) ->
-                #cache.put('credits', results)
-                deferred.resolve results
-            ), (response) ->
-                deferred.reject response
+        ), (response) ->
+            deferred.reject response
 
         deferred.promise
 
@@ -47,7 +40,6 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q, DSCacheFactory) 
         credit.genre = credit.genreName[0].name
 
         credits.post({ 'data': credit }).then (results) ->
-            cache.put('credits', results)
             deferred.resolve results
 
         deferred.promise
@@ -60,7 +52,6 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q, DSCacheFactory) 
         credit = Restangular.one('credits', id).get().then (result) ->
             result = obj
             result.put().then (results) ->
-                cache.put('credits', results)
                 deferred.resolve results
 
         deferred.promise
@@ -70,7 +61,6 @@ angular.module('leLabApp').service 'Credits', (Restangular, $q, DSCacheFactory) 
         deferred = $q.defer()
 
         Restangular.one('credits', id).remove().then (results) ->
-            cache.put('credits', results)
             deferred.resolve results
 
         deferred.promise

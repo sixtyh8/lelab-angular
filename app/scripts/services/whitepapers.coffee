@@ -41,8 +41,8 @@ angular.module('leLabApp').service 'Whitepapers', (Restangular, $q) ->
 
         Restangular.one('whitepapers', id).get().then (result) ->
             result = obj
-            result.put()
-            deferred.resolve
+            result.put().then (data) ->
+                deferred.resolve data
 
         deferred.promise
 

@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('leLabApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRoute', 'restangular', 'ui.router', 'cgBusy', 'xeditable', 'confirmClick', 'flow', 'pasvaz.bindonce', 'ui.bootstrap', 'ui.tinymce', 'webStorageModule', 'angular-data.DSCacheFactory']).run(function($rootScope, $state, editableOptions, $filter, Session) {
+  angular.module('leLabApp', ['ngCookies', 'ngResource', 'ngSanitize', 'ngRoute', 'restangular', 'ui.router', 'cgBusy', 'xeditable', 'confirmClick', 'flow', 'pasvaz.bindonce', 'ui.bootstrap', 'webStorageModule', 'angular-data.DSCacheFactory', 'infinite-scroll', 'textAngular']).run(function($rootScope, $state, editableOptions, $filter, Session) {
     var routeAdmin, routeClean, routesThatDontRequireAuth, routesThatRequireAdmin;
     $rootScope.$state = $state;
     routesThatDontRequireAuth = ['/login'];

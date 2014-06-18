@@ -13,7 +13,7 @@ angular.module('leLabApp').directive 'imageUpload', ->
                 scope.hasImage = false
         , true
 
-        scope.$on 'flow::fileAdded', (event, $flow, flowFile) ->
+        scope.$on 'credit.flow::fileAdded', (event, $flow, flowFile) ->
             console.log flowFile
 
         scope.test = "Scope Test"

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"form",
+				"form-group	BootstrapClass"
+			],
+			[
+				"for",
+				"form-inline	BootstrapClass"
+			],
+			[
+				"credits",
+				"creditsList"
+			],
+			[
+				"credi",
+				"creditsList"
+			],
+			[
 				"text",
 				"text-warning	BootstrapClass"
 			],
@@ -18,10 +34,6 @@
 			[
 				"col",
 				"col-sm-4	BootstrapClass"
-			],
-			[
-				"form",
-				"form-control	BootstrapClass"
 			],
 			[
 				"btn",
@@ -496,34 +508,30 @@
 				"$modalInstance"
 			],
 			[
-				"for",
-				"form-control	BootstrapClass"
-			],
-			[
 				"col-sm",
 				"col-sm-8	BootstrapClass"
 			],
 			[
 				"contro",
 				"control-label	BootstrapClass"
-			],
-			[
-				"masterFile",
-				"masterFileContent  (variable)"
-			],
-			[
-				"list-sty",
-				"list-style-type:   (property)"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/scripts/services/credits.coffee",
+			"file": "app/views/directives/imageUpload.html",
 			"settings":
 			{
-				"buffer_size": 2094,
+				"buffer_size": 2109,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/directives/imageUpload.coffee",
+			"settings":
+			{
+				"buffer_size": 540,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,23 +539,7 @@
 			"file": "app/scripts/controllers/credits.coffee",
 			"settings":
 			{
-				"buffer_size": 1880,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/scripts/filters/filters.coffee",
-			"settings":
-			{
-				"buffer_size": 620,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/partials/credits.list.html",
-			"settings":
-			{
-				"buffer_size": 2292,
+				"buffer_size": 2532,
 				"line_ending": "Windows"
 			}
 		}
@@ -600,19 +592,30 @@
 	},
 	"file_history":
 	[
+		"/D/WebDev/lelab-angular/app/scripts/controllers/main.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
+		"/D/WebDev/lelab-angular/app/views/directives/creditForm.html",
+		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
+		"/D/WebDev/lelab-angular/app/views/partials/credits.edit.html",
+		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
+		"/D/WebDev/lelab-angular/app/index.html",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/whitepapers.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/services/whitepapers.coffee",
+		"/D/WebDev/lelab-angular/app/styles/main.scss",
+		"/D/WebDev/lelab-angular/app/scripts/app.coffee",
+		"/D/WebDev/lelab-angular/app/views/directives/whitepaperForm.html",
+		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.edit.html",
+		"/D/WebDev/lelab-angular/app/scripts/services/dashboard.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/filters/filters.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/engineers.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/engineers.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/genres.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/tags.coffee",
 		"/D/WebDev/lelab-angular/app/bower_components/angular-cache/bower.json",
-		"/D/WebDev/lelab-angular/app/index.html",
-		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
-		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/config/config.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/app.coffee",
 		"/C/wamp/bin/apache/apache2.4.9/conf/extra/httpd-vhosts.conf",
 		"/C/Windows/System32/drivers/etc/hosts",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/main.coffee",
 		"/D/WebDev/lelab-angular/app/views/credits.html",
 		"/D/WebDev/lelab-angular/app/views/profile.html",
 		"/D/WebDev/lelab-angular/app/views/users.html",
@@ -620,11 +623,9 @@
 		"/D/WebDev/lelab-angular/app/views/login.html",
 		"/D/WebDev/lelab-angular/.gitignore",
 		"/D/WebDev/lelab-angular/www/styles/main.css",
-		"/D/WebDev/lelab-angular/app/styles/main.scss",
 		"/D/WebDev/lelab-angular/app/views/engineers.html",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/user.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/user.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/whitepapers.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/session.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/config/routes.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/header.coffee",
@@ -632,11 +633,8 @@
 		"/D/WebDev/lelab-angular/app/views/genres.html",
 		"/D/WebDev/lelab-angular/app/scripts/services/session.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/index.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/filters/filters.coffee",
 		"/D/WebDev/lelab-angular/app/views/partials/header.unauth.html",
 		"/D/WebDev/lelab-angular/app/scripts/services/tags.coffee",
-		"/D/WebDev/lelab-angular/app/views/directives/whitepaperForm.html",
 		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.list.html",
 		"/D/WebDev/lelab-angular/app/bower_components/tinymce/tinymce.min.js",
 		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.new.html",
@@ -645,11 +643,7 @@
 		"/D/WebDev/lelab-angular/app/views/partials/credits.new.html",
 		"/D/WebDev/lelab-angular/app/scripts/directives/creditForm.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/directives/whitepaperForm.coffee",
-		"/D/WebDev/lelab-angular/app/views/directives/creditForm.html",
 		"/D/WebDev/lelab-angular/app/views/whitepapers.html",
-		"/D/WebDev/lelab-angular/app/scripts/services/whitepapers.coffee",
-		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.edit.html",
-		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
 		"/D/WebDev/lelab-angular/app/views/tags.html",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/categories.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/directives/imageUpload.coffee",
@@ -725,9 +719,7 @@
 		"/D/WebDev/ysc-front-end/karma.conf.js",
 		"/D/WebDev/ysc-front-end/app/styles/ui/_colors.scss",
 		"/D/WebDev/ysc-front-end/app/views/partials/food.groceries.html",
-		"/D/WebDev/ysc-front-end/app/styles/partials/_tour.scss",
-		"/D/WebDev/ysc-front-end/app/styles/views/_dashboard.scss",
-		"/D/WebDev/ysc-front-end/app/bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_variables.scss"
+		"/D/WebDev/ysc-front-end/app/styles/partials/_tour.scss"
 	],
 	"find":
 	{
@@ -905,23 +897,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/scripts/services/credits.coffee",
+					"file": "app/views/directives/imageUpload.html",
 					"settings":
 					{
-						"buffer_size": 2094,
+						"buffer_size": 2109,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								748,
-								748
+								139,
+								139
 							]
 						],
 						"settings":
@@ -1030,30 +1022,30 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/scripts/controllers/credits.coffee",
+					"file": "app/scripts/directives/imageUpload.coffee",
 					"settings":
 					{
-						"buffer_size": 1880,
+						"buffer_size": 540,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								347,
-								347
+								540,
+								540
 							]
 						],
 						"settings":
@@ -1174,18 +1166,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/scripts/filters/filters.coffee",
+					"file": "app/scripts/controllers/credits.coffee",
 					"settings":
 					{
-						"buffer_size": 620,
+						"buffer_size": 2532,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								620,
-								620
+								1968,
+								1968
 							]
 						],
 						"settings":
@@ -1299,139 +1291,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/partials/credits.list.html",
-					"settings":
-					{
-						"buffer_size": 2292,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2020,
-								2020
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 594.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
