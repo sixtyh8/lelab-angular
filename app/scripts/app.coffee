@@ -10,13 +10,13 @@ angular.module('leLabApp', [
   'cgBusy',
   'xeditable',
   'confirmClick',
-  'flow',
   'pasvaz.bindonce',
   'ui.bootstrap',
   'webStorageModule',
   'angular-data.DSCacheFactory',
   'infinite-scroll',
-  'textAngular'
+  'textAngular',
+  'angularFileUpload'
 ])
 
   .run ($rootScope, $state, editableOptions, $filter, Session) ->
