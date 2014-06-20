@@ -25,6 +25,14 @@ angular.module('leLabApp').config ($urlRouterProvider, $stateProvider) ->
                 templateUrl: "views/partials/header.auth.html"
             main:
                 templateUrl: "views/users.html"
+    ).state("users.change-password",
+        url: "/change-password"
+        views:
+            header:
+                templateUrl: "views/partials/header.auth.html"
+            main:
+                templateUrl: "views/change-password.html"
+
 
     # Credits
     ).state("credits",

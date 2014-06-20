@@ -18,12 +18,9 @@ angular.module('leLabApp').controller 'CreditsCtrl.List', ($scope, $state, $filt
         Credits.list($scope.limit, $scope.offset).then (data) ->
             if data.length
                 if $scope.creditsList?
-                    console.log 'creditsList exists: push data'
-                    console.log data
                     for credit in data
                         $scope.creditsList.push(credit)
                 else
-                    console.log data
                     $scope.creditsList = data
 
                 $scope.offset = $scope.offset + $scope.limit
@@ -57,10 +54,6 @@ angular.module('leLabApp').controller 'CreditsCtrl.Edit', ($scope, $state, $stat
         Credits.update($scope.credit).then (data) ->
             $state.go('credits')
 
-    $scope.$on 'flow::fileAdded', (event, $flow, flowFile) ->
-            console.log flowFile
-
-
 
 angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credits, Engineers, Genres, Images) ->
 
@@ -74,9 +67,6 @@ angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credit
 
     Genres.list().then (data) ->
             $scope.credit.genres = data
-
-    # $scope.$on 'flow::fileAdded', (event, $flow, flowFile) ->
-    #     console.log flowFile
 
     $scope.saveCredit = ->
         Credits.save($scope.credit).then (data) ->

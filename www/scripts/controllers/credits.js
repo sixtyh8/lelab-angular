@@ -16,14 +16,11 @@
         var credit, _i, _len;
         if (data.length) {
           if ($scope.creditsList != null) {
-            console.log('creditsList exists: push data');
-            console.log(data);
             for (_i = 0, _len = data.length; _i < _len; _i++) {
               credit = data[_i];
               $scope.creditsList.push(credit);
             }
           } else {
-            console.log(data);
             $scope.creditsList = data;
           }
           $scope.offset = $scope.offset + $scope.limit;
@@ -53,14 +50,11 @@
         return $scope.credit.genres = data;
       });
     });
-    $scope.saveCredit = function() {
+    return $scope.saveCredit = function() {
       return Credits.update($scope.credit).then(function(data) {
         return $state.go('credits');
       });
     };
-    return $scope.$on('flow::fileAdded', function(event, $flow, flowFile) {
-      return console.log(flowFile);
-    });
   });
 
   angular.module('leLabApp').controller('CreditsCtrl.New', function($scope, $state, Credits, Engineers, Genres, Images) {

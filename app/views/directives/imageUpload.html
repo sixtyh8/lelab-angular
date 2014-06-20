@@ -7,12 +7,7 @@
 
         <div class="panel-body">
             <div ng-show="selectedFiles != null">
-                    <img ng-show="dataUrls[0]" ng-src="{{dataUrls[0]}}">
-                    <button class="button" ng-click="start(0)" ng-show="progress[0] < 0">Start</button>
-                    <span class="progress" ng-show="progress[0] >= 0">
-                        <div style="width:{{progress[0]}}%">{{progress[0]}}%</div>
-                    </span>
-                    <button class="button" ng-click="abort()" ng-show="hasUploader() && progress[0] < 100">Abort</button>
+                <img ng-show="dataUrls[0]" ng-src="{{dataUrls[0]}}" height="150" width="150">
             </div>
             <div ng-if="imageAlreadyExists" ng-hide="selectedFiles != null">
                 <img ng-src="/images/credits/{{ credit.imgName[0].image_name }}" height="150" width="150">
@@ -38,6 +33,9 @@
             </div>
             <div ng-show="imageAlreadyExists">
                 <input type="file" class="file-input" ng-file-select="onFileSelect($files)" title="Change Image">
+            </div>
+            <div ng-show="selectedFiles != null">
+                <button class="btn btn-primary" ng-click="uploadImage()" style="margin-top:15px;">Upload</button>
             </div>
         </div>
 

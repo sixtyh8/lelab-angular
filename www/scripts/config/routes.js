@@ -24,6 +24,16 @@
           templateUrl: "views/users.html"
         }
       }
+    }).state("users.change-password", {
+      url: "/change-password",
+      views: {
+        header: {
+          templateUrl: "views/partials/header.auth.html"
+        },
+        main: {
+          templateUrl: "views/change-password.html"
+        }
+      }
     }).state("credits", {
       url: "/credits",
       views: {
