@@ -16,7 +16,8 @@ angular.module('leLabApp', [
   'angular-data.DSCacheFactory',
   'infinite-scroll',
   'textAngular',
-  'angularFileUpload'
+  'angularFileUpload',
+  'decipher.tags'
 ])
 
   .run ($rootScope, $state, editableOptions, $filter, Session) ->

@@ -8,4 +8,4 @@ angular.module('leLabApp').directive 'whitepaperForm', (Tags) ->
 
         # Get tags
         Tags.list().then (data) ->
-            scope.tags = data
+            scope.tagsList = data

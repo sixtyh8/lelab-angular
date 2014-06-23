@@ -24,7 +24,7 @@
           scope.dataUrls = [];
           if (window.FileReader && $file.type.indexOf('image') > -1) {
             fileReader = new FileReader();
-            fileReader.readAsDataURL($files[0]);
+            fileReader.readAsDataURL($file);
             fileReader.onload = function(e) {
               return $timeout(function() {
                 return scope.dataUrls[0] = e.target.result;
@@ -42,13 +42,18 @@
           }
         };
         return scope.uploadImage = function() {
-          var file, fileReader, formData;
-          fileReader = new FileReader();
+          var file;
           file = scope.selectedFiles[0];
-          formData = new FormData();
-          formData.append('file', file);
-          formData.append('name', file.name);
-          return Images.upload(formData).then(function(data) {
+          return $upload.upload({
+            url: 'http://api.lelab.local/images/upload',
+            file: file
+          }).progress(function(evt) {
+            return console.log('percent: ' + parseInt(100.0 * evt.loaded / evt.total));
+          }).success(function(data, status, headers, config) {
+            console.log("success");
+            return console.log(data);
+          }).error(function(data, status, headers, config) {
+            console.log("error");
             return console.log(data);
           });
         };

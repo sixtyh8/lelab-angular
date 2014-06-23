@@ -47,8 +47,6 @@ angular.module('leLabApp').controller 'CreditsCtrl.Edit', ($scope, $state, $stat
     Credits.get($stateParams.creditId).then (data) ->
         $scope.credit = data
         $scope.selectedGenre = $scope.credit.genreName[0]
-        Genres.list().then (data) ->
-            $scope.credit.genres = data
 
     $scope.saveCredit = ->
         Credits.update($scope.credit).then (data) ->
@@ -64,9 +62,6 @@ angular.module('leLabApp').controller 'CreditsCtrl.New', ($scope, $state, Credit
         year: $scope.currentYear
         engineer_id: "1"
         credit: "Mastering"
-
-    Genres.list().then (data) ->
-            $scope.credit.genres = data
 
     $scope.saveCredit = ->
         Credits.save($scope.credit).then (data) ->

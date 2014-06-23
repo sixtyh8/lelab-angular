@@ -10,19 +10,19 @@ angular.module('leLabApp').service 'Tags', (Restangular, $q) ->
 
         deferred.promise
 
-    add: (label) ->
+    add: (name) ->
         deferred = $q.defer()
 
-        Restangular.all("tags").post({ 'data': label }).then (results) ->
+        Restangular.all("tags").post({ 'data': name }).then (results) ->
             deferred.resolve results
 
         deferred.promise
 
-    update: (id, label) ->
+    update: (id, name) ->
         deferred = $q.defer()
 
         tag = Restangular.one("tags", id).get().then (results) ->
-            results[0].label = label
+            results[0].name = name
             results.put().then (data) ->
                 deferred.resolve data
 

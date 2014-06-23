@@ -45,10 +45,7 @@
   angular.module('leLabApp').controller('CreditsCtrl.Edit', function($scope, $state, $stateParams, Credits, Engineers, Genres) {
     Credits.get($stateParams.creditId).then(function(data) {
       $scope.credit = data;
-      $scope.selectedGenre = $scope.credit.genreName[0];
-      return Genres.list().then(function(data) {
-        return $scope.credit.genres = data;
-      });
+      return $scope.selectedGenre = $scope.credit.genreName[0];
     });
     return $scope.saveCredit = function() {
       return Credits.update($scope.credit).then(function(data) {
@@ -68,9 +65,6 @@
       engineer_id: "1",
       credit: "Mastering"
     };
-    Genres.list().then(function(data) {
-      return $scope.credit.genres = data;
-    });
     return $scope.saveCredit = function() {
       return Credits.save($scope.credit).then(function(data) {
         return $state.go('credits');

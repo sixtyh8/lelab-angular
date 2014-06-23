@@ -17,22 +17,20 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.List', ($scope, $state, W
             $scope.whitepapers.list.splice(index, 1)
 
 
-angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $stateParams, Whitepapers, Tags) ->
+angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $stateParams, Whitepapers) ->
 
     Whitepapers.get($stateParams.whitepaperId).then (data) ->
         $scope.whitepaper = data
-        # $scope.whitepaper.body = $sce.trustAsHtml($scope.whitepaper.body)
 
     $scope.saveWhitepaper = ->
         Whitepapers.update($scope.whitepaper).then (data) ->
             $state.go('whitepapers')
 
 
-angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, Whitepapers, Tags) ->
+angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, Whitepapers) ->
 
     $scope.whitepaper =
         created_at: null
-
 
     $scope.saveWhitepaper = ->
         newDate = new Date()
@@ -40,5 +38,4 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, Wh
         $scope.whitepaper.created_at = $scope.now
 
         Whitepapers.save($scope.whitepaper).then (data) ->
-            console.log "saved!"
             $state.go('whitepapers')
