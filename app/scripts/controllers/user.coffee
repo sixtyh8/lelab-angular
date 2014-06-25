@@ -7,7 +7,7 @@ angular.module('leLabApp').controller 'UsersCtrl', ($scope, $filter, User) ->
             username: ''
             email: ''
             password: ''
-            admin: false
+            admin: 'placeholder'
 
     $scope.statuses = [
         {value: 'Y', text: 'Admin'}

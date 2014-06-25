@@ -9,6 +9,11 @@
     </div>
     <div class="form-group">
         <label class="control-label" for="whitepaper-tags">Tags</label>
-        <tags model="whitepaper.tags" src="tag as tag.name for tag in tagsList" name="whitepaper-tag"></tags>
+        <bootstrap-tagsinput
+          ng-model="whitepaper.tags"
+          typeahead-source="tagsList"
+          tagclass="label label-info"
+        >
+        </bootstrap-tagsinput>
     </div>
 </form>

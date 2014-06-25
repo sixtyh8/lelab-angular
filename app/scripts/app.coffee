@@ -17,7 +17,7 @@ angular.module('leLabApp', [
   'infinite-scroll',
   'textAngular',
   'angularFileUpload',
-  'decipher.tags'
+  'bootstrap-tagsinput'
 ])
 
   .run ($rootScope, $state, editableOptions, $filter, Session) ->

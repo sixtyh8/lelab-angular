@@ -21,21 +21,26 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $
 
     Whitepapers.get($stateParams.whitepaperId).then (data) ->
         $scope.whitepaper = data
+        if !data.tags?
+            $scope.whitepaper.tags = ['sample tag']
 
     $scope.saveWhitepaper = ->
         Whitepapers.update($scope.whitepaper).then (data) ->
             $state.go('whitepapers')
 
 
-angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, Whitepapers) ->
+angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, $filter, Whitepapers) ->
 
     $scope.whitepaper =
         created_at: null
+        tags: ['sample tag']
 
     $scope.saveWhitepaper = ->
         newDate = new Date()
         $scope.now = $filter('date')(newDate, 'shortDate')
         $scope.whitepaper.created_at = $scope.now
 
-        Whitepapers.save($scope.whitepaper).then (data) ->
-            $state.go('whitepapers')
+        console.log $scope.whitepaper
+
+        # Whitepapers.save($scope.whitepaper).then (data) ->
+        #     $state.go('whitepapers')
