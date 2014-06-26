@@ -12,12 +12,17 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.List', ($scope, $state, W
                 fillLastPage: true
 
 
+    $scope.searchWhitepapers = ->
+        $scope.whitepapersPromise = Whitepapers.search($scope.searchTerm).then (data) ->
+            $scope.whitepapers.list = data
+
+
     $scope.deleteWhitepaper = (whitepaperID, index) ->
         Whitepapers.delete(whitepaperID).then (data) ->
             $scope.whitepapers.list.splice(index, 1)
 
 
-angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $stateParams, Whitepapers) ->
+angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $stateParams, $filter, Whitepapers) ->
 
     Whitepapers.get($stateParams.whitepaperId).then (data) ->
         $scope.whitepaper = data
@@ -28,6 +33,9 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $
             $scope.whitepaper.tags.push(tag[0].name)
 
     $scope.saveWhitepaper = ->
+        newDate = new Date()
+        $scope.now = $filter('date')(newDate, 'short')
+        $scope.whitepaper.updated_at = $scope.now
         Whitepapers.update($scope.whitepaper).then (data) ->
             $state.go('whitepapers')
 
@@ -40,7 +48,7 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, $f
 
     $scope.saveWhitepaper = ->
         newDate = new Date()
-        $scope.now = $filter('date')(newDate, 'shortDate')
+        $scope.now = $filter('date')(newDate, 'short')
         $scope.whitepaper.created_at = $scope.now
 
         Whitepapers.save($scope.whitepaper).then (data) ->

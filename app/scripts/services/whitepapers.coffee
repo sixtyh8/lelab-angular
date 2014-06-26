@@ -54,3 +54,11 @@ angular.module('leLabApp').service 'Whitepapers', (Restangular, $q) ->
             deferred.resolve results
 
         deferred.promise
+
+    search: (searchTerm) ->
+        deferred = $q.defer()
+
+        Restangular.one('whitepapers/search').get({'keyword': searchTerm}).then (results) ->
+            deferred.resolve results
+
+        deferred.promise
