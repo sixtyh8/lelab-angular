@@ -21,8 +21,11 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.Edit', ($scope, $state, $
 
     Whitepapers.get($stateParams.whitepaperId).then (data) ->
         $scope.whitepaper = data
-        if !data.tags?
-            $scope.whitepaper.tags = ['sample tag']
+        $scope.whitepaper.tags = []
+
+        # Add each tag to the tags array of the scope
+        for tag in data.tagsList
+            $scope.whitepaper.tags.push(tag[0].name)
 
     $scope.saveWhitepaper = ->
         Whitepapers.update($scope.whitepaper).then (data) ->
@@ -33,14 +36,12 @@ angular.module('leLabApp').controller 'WhitepapersCtrl.New', ($scope, $state, $f
 
     $scope.whitepaper =
         created_at: null
-        tags: ['sample tag']
+        tags: []
 
     $scope.saveWhitepaper = ->
         newDate = new Date()
         $scope.now = $filter('date')(newDate, 'shortDate')
         $scope.whitepaper.created_at = $scope.now
 
-        console.log $scope.whitepaper
-
-        # Whitepapers.save($scope.whitepaper).then (data) ->
-        #     $state.go('whitepapers')
+        Whitepapers.save($scope.whitepaper).then (data) ->
+            $state.go('whitepapers')
