@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"label",
+				"label-default	BootstrapClass"
+			],
+			[
 				"white",
 				"whitepaper"
 			],
@@ -324,10 +328,6 @@
 				"background-color"
 			],
 			[
-				"label",
-				"label-primary	BootstrapClass"
-			],
-			[
 				"ex",
 				"expected_expiry_date"
 			],
@@ -520,18 +520,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/directives/whitepaperForm.html",
+			"file": "app/scripts/controllers/whitepapers.coffee",
 			"settings":
 			{
-				"buffer_size": 708,
+				"buffer_size": 1823,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/scripts/controllers/whitepapers.coffee",
+			"file": "app/views/partials/whitepapers.list.html",
 			"settings":
 			{
-				"buffer_size": 1469,
+				"buffer_size": 2167,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/services/whitepapers.coffee",
+			"settings":
+			{
+				"buffer_size": 1474,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/directives/whitepaperForm.html",
+			"settings":
+			{
+				"buffer_size": 708,
 				"line_ending": "Windows"
 			}
 		}
@@ -584,24 +600,31 @@
 	},
 	"file_history":
 	[
+		"/C/Users/gcharbonneau/.gitconfig",
+		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/whitepapers.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/services/whitepapers.coffee",
+		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.list.html",
+		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/engineers.coffee",
+		"/D/WebDev/lelab-angular/app/views/directives/whitepaperForm.html",
+		"/D/WebDev/lelab-angular/app/index.html",
+		"/D/WebDev/lelab-angular/app/bower_components/angular-sanitize/bower.json",
 		"/D/WebDev/lelab-angular/app/scripts/app.coffee",
 		"/D/WebDev/lelab-angular/app/styles/main.scss",
 		"/D/WebDev/lelab-angular/app/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput-angular.js",
 		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.new.html",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/user.coffee",
-		"/D/WebDev/lelab-angular/app/index.html",
 		"/D/WebDev/lelab-angular/app/bower_components/bootstrap-tagsinput/bower.json",
 		"/D/WebDev/lelab-angular/app/bower_components/bootstrap-tagsinput/package.json",
 		"/D/WebDev/lelab-angular/app/views/directives/creditForm.html",
 		"/D/WebDev/lelab-angular/app/views/users.html",
-		"/D/WebDev/lelab-angular/app/views/directives/whitepaperForm.html",
 		"/D/WebDev/lelab-angular/bower.json",
 		"/D/WebDev/lelab-angular/app/scripts/directives/whitepaperForm.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/whitepapers.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/tags.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/tags.coffee",
 		"/D/WebDev/lelab-angular/app/views/tags.html",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/directives/creditForm.coffee",
 		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.edit.html",
 		"/D/WebDev/lelab-angular/app/views/directives/imageUpload.html",
@@ -613,15 +636,11 @@
 		"/D/WebDev/lelab-angular/app/scripts/services/user.coffee",
 		"/D/WebDev/lelab-angular/app/views/partials/credits.new.html",
 		"/D/WebDev/lelab-angular/app/views/partials/credits.edit.html",
-		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/main.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/services/whitepapers.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/dashboard.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/filters/filters.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/engineers.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/engineers.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/genres.coffee",
 		"/D/WebDev/lelab-angular/app/bower_components/angular-cache/bower.json",
 		"/C/wamp/bin/apache/apache2.4.9/conf/extra/httpd-vhosts.conf",
@@ -640,7 +659,6 @@
 		"/D/WebDev/lelab-angular/app/scripts/services/session.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/index.coffee",
 		"/D/WebDev/lelab-angular/app/views/partials/header.unauth.html",
-		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.list.html",
 		"/D/WebDev/lelab-angular/app/bower_components/tinymce/tinymce.min.js",
 		"/D/WebDev/lelab-angular/app/bower_components/angular-table/src/main/webapp/js/demo/demo.js",
 		"/D/WebDev/lelab-angular/Gruntfile.js",
@@ -709,9 +727,7 @@
 		"/D/WebDev/ysc-front-end/app/views/partials/quests.create.html",
 		"/D/WebDev/ysc-front-end/app/views/partials/quests.choose.html",
 		"/D/WebDev/ysc-front-end/app/views/partials/quests.show.html",
-		"/D/WebDev/ysc-front-end/app/views/partials/food.today.html",
-		"/C/Users/gcharbonneau/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/D/WebDev/ysc-front-end/app/styles/views/_quests.scss"
+		"/D/WebDev/ysc-front-end/app/views/partials/food.today.html"
 	],
 	"find":
 	{
@@ -894,18 +910,150 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/directives/whitepaperForm.html",
+					"file": "app/scripts/controllers/whitepapers.coffee",
 					"settings":
 					{
-						"buffer_size": 708,
+						"buffer_size": 1823,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								610,
-								610
+								1823,
+								1823
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/partials/whitepapers.list.html",
+					"settings":
+					{
+						"buffer_size": 2167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1444,
+								1444
 							]
 						],
 						"settings":
@@ -1025,128 +1173,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/scripts/controllers/whitepapers.coffee",
+					"buffer": 2,
+					"file": "app/scripts/services/whitepapers.coffee",
 					"settings":
 					{
-						"buffer_size": 1469,
+						"buffer_size": 1474,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								445,
-								445
+								793,
+								793
 							]
 						],
 						"settings":
 						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
 							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/directives/whitepaperForm.html",
+					"settings":
+					{
+						"buffer_size": 708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
