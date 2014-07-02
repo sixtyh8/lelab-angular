@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-center	BootstrapClass"
+			],
+			[
 				"label",
 				"label-default	BootstrapClass"
 			],
@@ -70,10 +74,6 @@
 			[
 				"credi",
 				"creditsList"
-			],
-			[
-				"text",
-				"text-warning	BootstrapClass"
 			],
 			[
 				"range",
@@ -520,34 +520,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/scripts/controllers/whitepapers.coffee",
+			"file": "app/scripts/directives/imageUpload.coffee",
 			"settings":
 			{
-				"buffer_size": 1823,
+				"buffer_size": 2135,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/partials/whitepapers.list.html",
+			"file": "app/views/directives/imageUpload.html",
 			"settings":
 			{
-				"buffer_size": 2167,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/scripts/services/whitepapers.coffee",
-			"settings":
-			{
-				"buffer_size": 1474,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/directives/whitepaperForm.html",
-			"settings":
-			{
-				"buffer_size": 708,
+				"buffer_size": 2538,
 				"line_ending": "Windows"
 			}
 		}
@@ -600,15 +584,20 @@
 	},
 	"file_history":
 	[
+		"/D/WebDev/lelab-angular/app/scripts/config/config.coffee",
+		"/D/WebDev/lelab-angular/app/views/directives/imageUpload.html",
+		"/D/WebDev/lelab-angular/app/views/partials/credits.edit.html",
+		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
+		"/D/WebDev/lelab-angular/app/scripts/directives/imageUpload.coffee",
+		"/D/WebDev/lelab-angular/app/views/directives/whitepaperForm.html",
+		"/D/WebDev/lelab-angular/app/scripts/services/whitepapers.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/whitepapers.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
+		"/D/WebDev/lelab-angular/app/scripts/config/routes.coffee",
+		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.list.html",
 		"/C/Users/gcharbonneau/.gitconfig",
 		"/D/WebDev/lelab-angular/app/scripts/services/credits.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/credits.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/controllers/whitepapers.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/services/whitepapers.coffee",
-		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.list.html",
-		"/D/WebDev/lelab-angular/app/views/partials/credits.list.html",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/engineers.coffee",
-		"/D/WebDev/lelab-angular/app/views/directives/whitepaperForm.html",
 		"/D/WebDev/lelab-angular/app/index.html",
 		"/D/WebDev/lelab-angular/app/bower_components/angular-sanitize/bower.json",
 		"/D/WebDev/lelab-angular/app/scripts/app.coffee",
@@ -627,15 +616,10 @@
 		"/D/WebDev/lelab-angular/app/views/tags.html",
 		"/D/WebDev/lelab-angular/app/scripts/directives/creditForm.coffee",
 		"/D/WebDev/lelab-angular/app/views/partials/whitepapers.edit.html",
-		"/D/WebDev/lelab-angular/app/views/directives/imageUpload.html",
-		"/D/WebDev/lelab-angular/app/scripts/config/routes.coffee",
 		"/D/WebDev/lelab-angular/app/views/change-password.html",
-		"/D/WebDev/lelab-angular/app/scripts/config/config.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/images.coffee",
-		"/D/WebDev/lelab-angular/app/scripts/directives/imageUpload.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/user.coffee",
 		"/D/WebDev/lelab-angular/app/views/partials/credits.new.html",
-		"/D/WebDev/lelab-angular/app/views/partials/credits.edit.html",
 		"/D/WebDev/lelab-angular/app/scripts/controllers/main.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/genres.coffee",
 		"/D/WebDev/lelab-angular/app/scripts/services/dashboard.coffee",
@@ -905,23 +889,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/scripts/controllers/whitepapers.coffee",
+					"file": "app/scripts/directives/imageUpload.coffee",
 					"settings":
 					{
-						"buffer_size": 1823,
+						"buffer_size": 2135,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1823,
-								1823
+								707,
+								707
 							]
 						],
 						"settings":
@@ -1035,25 +1019,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/partials/whitepapers.list.html",
+					"file": "app/views/directives/imageUpload.html",
 					"settings":
 					{
-						"buffer_size": 2167,
+						"buffer_size": 2538,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1444,
-								1444
+								2385,
+								2385
 							]
 						],
 						"settings":
@@ -1162,62 +1146,6 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/scripts/services/whitepapers.coffee",
-					"settings":
-					{
-						"buffer_size": 1474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								793,
-								793
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 162.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/directives/whitepaperForm.html",
-					"settings":
-					{
-						"buffer_size": 708,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true

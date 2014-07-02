@@ -7,6 +7,7 @@ angular.module('leLabApp').config ($urlRouterProvider, $stateProvider) ->
     # Map /credits to /credits/list
     $urlRouterProvider.when("/credits","/credits/list")
     $urlRouterProvider.when("/whitepapers", "/whitepapers/list")
+    $urlRouterProvider.when("/", "/credits/list")
 
     # Index
     $stateProvider.state("index",

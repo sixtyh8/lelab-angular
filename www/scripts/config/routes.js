@@ -4,6 +4,7 @@
     $urlRouterProvider.otherwise("/");
     $urlRouterProvider.when("/credits", "/credits/list");
     $urlRouterProvider.when("/whitepapers", "/whitepapers/list");
+    $urlRouterProvider.when("/", "/credits/list");
     return $stateProvider.state("index", {
       url: "/",
       views: {

@@ -22,6 +22,7 @@
           scope.selectedFiles = $files;
           $file = scope.selectedFiles[0];
           scope.dataUrls = [];
+          scope.uploadSucceeded = false;
           if (window.FileReader && $file.type.indexOf('image') > -1) {
             fileReader = new FileReader();
             fileReader.readAsDataURL($file);
@@ -47,14 +48,11 @@
           return $upload.upload({
             url: 'http://api.lelab.local/images/upload',
             file: file
-          }).progress(function(evt) {
-            return console.log('percent: ' + parseInt(100.0 * evt.loaded / evt.total));
           }).success(function(data, status, headers, config) {
-            console.log("success");
-            return console.log(data);
+            scope.credit.image_id = data.imageID;
+            return scope.uploadSucceeded = true;
           }).error(function(data, status, headers, config) {
-            console.log("error");
-            return console.log(data);
+            return console.log("error! status code: " + status);
           });
         };
       }

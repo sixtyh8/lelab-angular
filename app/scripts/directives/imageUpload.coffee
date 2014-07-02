@@ -22,6 +22,7 @@ angular.module('leLabApp').directive 'imageUpload', ($upload, $timeout, Images) 
             scope.selectedFiles = $files
             $file = scope.selectedFiles[0]
             scope.dataUrls = []
+            scope.uploadSucceeded = false
 
             if (window.FileReader && $file.type.indexOf('image') > -1)
                 fileReader = new FileReader()
@@ -43,38 +44,23 @@ angular.module('leLabApp').directive 'imageUpload', ($upload, $timeout, Images) 
                     scope.credit.artist_name = artist_name
 
         scope.uploadImage = () ->
-            # fileReader = new FileReader()
+
             file = scope.selectedFiles[0]
-            # fileReader.readAsArrayBuffer(file)
-
-            # fileReader.onloadend = (e) ->
-
-            #     console.log e.target.result
-            #     console.log file.name
-
-            #     formData = new FormData()
-            #     formData.append('file', e.target.result) # file is an ArrayBuffer read with fileReader.readAsArrayBuffer(file)
-            #     formData.append('name', file.name)
-
-            #     Images.upload(formData).then (data) ->
-            #         console.log data
 
             $upload.upload({
                 url: 'http://api.lelab.local/images/upload',
                 file: file
             })
 
-            .progress( (evt) ->
-                console.log 'percent: ' + parseInt(100.0 * evt.loaded / evt.total)
-            )
+            # .progress( (evt) ->
+            #     console.log 'percent: ' + parseInt(100.0 * evt.loaded / evt.total)
+            # )
 
             .success( (data, status, headers, config) ->
-                # file is uploaded successfully
-                console.log "success"
-                console.log data
+                scope.credit.image_id = data.imageID
+                scope.uploadSucceeded = true
             )
 
             .error( (data, status, headers, config) ->
-                console.log "error"
-                console.log data
+                console.log "error! status code: " + status
             )
