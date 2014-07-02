@@ -10,10 +10,10 @@
                 <img ng-show="dataUrls[0]" ng-src="{{dataUrls[0]}}" height="150" width="150">
             </div>
             <div ng-if="imageAlreadyExists" ng-hide="selectedFiles != null">
-                <img ng-src="/images/credits/{{ credit.imgName[0].image_name }}" height="150" width="150">
+                <img ng-src="http://cdn.lelab.local/images/credits/{{ credit.imgName[0].image_name }}" height="150" width="150">
             </div>
             <div ng-show="!imageAlreadyExists && selectedFiles == null">
-                <img ng-src="/images/no_image.gif">
+                <img ng-src="http://cdn.lelab.local/images/no_image.gif">
             </div>
         </div>
 
@@ -34,8 +34,11 @@
             <div ng-show="imageAlreadyExists">
                 <input type="file" class="file-input" ng-file-select="onFileSelect($files)" title="Change Image">
             </div>
-            <div ng-show="selectedFiles != null">
+            <div ng-show="selectedFiles != null && !uploadSucceeded">
                 <button class="btn btn-primary" ng-click="uploadImage()" style="margin-top:15px;">Upload</button>
+            </div>
+            <div ng-show="uploadSucceeded">
+                <p style="margin-top:15px;" class="text-success text-center"><span class="glyphicon glyphicon-ok"></span> Upload Complete!</p>
             </div>
         </div>
 

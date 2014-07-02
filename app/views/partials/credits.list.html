@@ -9,7 +9,7 @@
         </form>
     </div>
 
-    <table class="table table-striped" id="credits-table" infinite-scroll="getCredits()" infinite-scroll-disabled='loader.busy'>
+    <table class="table table-striped" id="credits-table" infinite-scroll="getCredits()" infinite-scroll-disabled="loader.busy" infinite-scroll-distance="2">
     	<thead>
     		<tr>
     			<th class="credit-id">ID</th>
@@ -31,7 +31,7 @@
     				<span ng-bind="credit.id"></span>
     			</td>
     			<td>
-    				<img ng-src="/images/credits/{{ credit.imgName[0].small_name }}" height="80" width="80" />
+    				<img ng-src="http://cdn.lelab.local/images/credits/{{ credit.imgName[0].small_name }}" height="80" width="80" />
     			</td>
     			<td><span ng-bind="credit.album_name"></span><br /><span ng-bind="credit.artist_name"></span></td>
     			<td ng-bind="credit.genreName[0].name"></td>
