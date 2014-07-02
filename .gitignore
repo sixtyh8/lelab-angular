@@ -6,3 +6,5 @@ www/*
 lelab-angular.sublime-project
 lelab-angular.sublime-workspace
 *.sublime-workspace
+
+www/index.html
