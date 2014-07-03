@@ -56,8 +56,7 @@ module.exports = function (grunt) {
 			test: [
 			  'compass',
 			  'coffee',
-			  'copy:styles',
-			  'copy:lang'
+			  'copy:styles'
 			],
 			dist: [
 				'coffee:dist',
@@ -484,7 +483,7 @@ module.exports = function (grunt) {
 	// usage: 'grunt'
 	grunt.registerTask('default', [
 		'jshint',
-		'test',
+		//'test',
 		'build'
 	]);
 };
