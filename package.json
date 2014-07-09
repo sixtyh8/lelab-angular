@@ -41,7 +41,7 @@
     "grunt-open": "latest",
     "grunt-express": "latest",
     "karma-html-reporter": "latest",
-    "grunt-text-replace": "latest",
+    "grunt-text-replace": "~0.3.12",
     "grunt-shell": "latest",
     "nodemon": "latest",
     "grunt-contrib-sass": "latest",

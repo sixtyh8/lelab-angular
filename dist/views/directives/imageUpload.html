@@ -10,10 +10,10 @@
                 <img ng-show="dataUrls[0]" ng-src="{{dataUrls[0]}}" height="150" width="150">
             </div>
             <div ng-if="imageAlreadyExists" ng-hide="selectedFiles != null">
-                <img ng-src="http://cdn.lelab.local/images/credits/{{ credit.imgName[0].image_name }}" height="150" width="150">
+                <img ng-src="{{ cdnUrl }}/images/credits/{{ credit.imgName[0].image_name }}" height="150" width="150">
             </div>
             <div ng-show="!imageAlreadyExists && selectedFiles == null">
-                <img ng-src="http://cdn.lelab.local/images/no_image.gif">
+                <img ng-src="{{ cdnUrl }}/images/no_image.gif">
             </div>
         </div>
 

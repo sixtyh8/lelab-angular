@@ -7,6 +7,7 @@ module.exports = function (grunt) {
 	require('time-grunt')(grunt);
 	grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-wiredep');
+	grunt.loadNpmTasks('grunt-text-replace');
 
 	// Grunt Config
 	grunt.initConfig({
@@ -44,6 +45,25 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
+		replace: {
+		  prod: {
+		    src: ['app/scripts/config/config.coffee'],
+		    overwrite: true,
+		    replacements: [{
+		      from: "ENV: 'DEV'",
+		      to: "ENV: 'PROD'"
+		    }]
+		  },
+		  dev: {
+			src: ['app/scripts/config/config.coffee'],
+			overwrite: true,
+			replacements: [{
+				from: "ENV: 'PROD'",
+				to: "ENV: 'DEV'"
+			}]
+		  }
+	    },
 
 		// Running concurrent tasks
 		concurrent: {
@@ -455,6 +475,7 @@ module.exports = function (grunt) {
 	// usage: 'grunt build'
 	grunt.registerTask('build', [
 		'clean:dist',
+		'replace:prod',
 	    'useminPrepare',
 	    'concurrent:dist',
 	    'autoprefixer',
@@ -463,7 +484,8 @@ module.exports = function (grunt) {
 	    'ngmin',
 	    'cssmin',
 	    'uglify',
-	    'usemin'
+	    'usemin',
+		'replace:dev'
 	]);
 
 	grunt.registerTask('dev', [
