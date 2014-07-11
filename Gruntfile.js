@@ -53,7 +53,11 @@ module.exports = function (grunt) {
 		    replacements: [{
 		      from: "ENV: 'DEV'",
 		      to: "ENV: 'PROD'"
-		    }]
+		    },
+			{
+				from: "http://api.lelab.local/",
+				to: "http://api.lelabmastering.com/"
+			}]
 		  },
 		  dev: {
 			src: ['app/scripts/config/config.coffee'],
@@ -61,6 +65,10 @@ module.exports = function (grunt) {
 			replacements: [{
 				from: "ENV: 'PROD'",
 				to: "ENV: 'DEV'"
+			},
+			{
+				from: "http://api.lelabmastering.com/",
+				to: "http://api.lelab.local/"
 			}]
 		  }
 	    },
